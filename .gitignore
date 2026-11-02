@@ -27,3 +27,12 @@ node_modules/
 *.log
 core
 core.*
+
+# Local session notes and orchestration state.
+/summary.md
+/muse_moe_w4a16/WORK_LOG.md
+/muse_moe_w4a16/overnight_state.json
+/muse_moe_w4a16/NOV1_HANDOFF.md
+/muse_moe_w4a16/tools/spark_ssh.py
+**/AGENTS.md
+**/hopper_build/
