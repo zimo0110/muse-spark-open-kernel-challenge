@@ -1,5 +1,8 @@
 # Architecture gap in Hopper W4A16 MoE
 
+> Historical research snapshot comparing the earlier register kernel with public implementations. The persistent CUDA port has since been evaluated at 2.382249×; see the [current experiment record](../../../EXPERIMENTS.md) for verified results. Leaderboard snapshots and proposed next steps below describe the time of this investigation.
+
+
 ## What is materially different from our 1.834x kernel?
 
 ### Takeaway
@@ -7,8 +10,8 @@ The actionable public control is alygg77's documented **2.4015x**, not an eviden
 
 ### Cited Findings
 - Author-published job `e1bcad5a55cd4a29` reports 2.4015x, CI 2.3655–2.4376. Published times for M1/8/16/32/128/256 are 24.64/63.61/92.27/123.96/175.24/207.76 us. These are **their records, not our reproduction**. [Pinned results](https://github.com/alygg77/okc-muse-spark-kernels/blob/6cae49a639ee6d14b929a5fd4a63c627f96d7dc0/RESULTS.md)
-- Our corresponding scored times are 34.48/83.59/109.85/141.60/231.00/321.71 us, and the two projection dispatches occupy about 93–97% of GPU kernel time at M8–256. Merely eliminating our routing/finish kernels cannot explain the public gap. [Our scored profile](/Users/zoir/dev/muse-challenge/muse_moe_w4a16/profiles/register_ready.9cf7ef93107b4052.txt)
-- **Our decomposition:** 64 output rows, 256-K steps, four warps split across output rows; all warps traverse full K. `_b256_x_shared` gathers activations, writes shared memory, and performs two CTA barriers each K step. At K4096 that is 32 such barriers per CTA's output tile. [Our source, `_b256_register_item` and `_b256_x_shared`](/Users/zoir/dev/muse-challenge/muse_moe_w4a16/submission.py)
+- Our corresponding scored times are 34.48/83.59/109.85/141.60/231.00/321.71 us, and the two projection dispatches occupy about 93–97% of GPU kernel time at M8–256. Merely eliminating our routing/finish kernels cannot explain the public gap. [Our scored profile](../../../profiles/register_ready.9cf7ef93107b4052.txt)
+- **Our decomposition:** 64 output rows, 256-K steps, four warps split across output rows; all warps traverse full K. `_b256_x_shared` gathers activations, writes shared memory, and performs two CTA barriers each K step. At K4096 that is 32 such barriers per CTA's output tile. [Our source, `_b256_register_item` and `_b256_x_shared`](../../../submission.py)
 - **Public skinny decomposition:** one unit is 16 output rows × full K4096, with ≤8 tokens in the active skinny builds. Eight warps cooperate on the same unit; each handles a disjoint 512-K slice. The raw codes occupy 32 KiB and original FP8 scales 4 KiB; the entire **36 KiB full-K unit** is contiguous and bulk-copied into a multi-slot shared ring. Functions: `skinny_ring`, `ring_issue`, `load_x_regs`; constants `NCH=64/NW`, `UNIT_CODES=32768`, `UNIT_SC=4096`. [Pinned source](https://github.com/alygg77/okc-muse-spark-kernels/blob/6cae49a639ee6d14b929a5fd4a63c627f96d7dc0/kernels/muse_moe_w4a16.py)
 - Each skinny warp retains its job's activation slice in `uint4 x0[2*NCH]`, loaded only when `j != curj`. At NW8, this is 16 uint4s = 64 scalar 32-bit registers/thread before other registers. Crucially those activations are reused across output-row units, rather than re-gathered and staged for every 256-K step of every output tile. Four independent FP32 MMA accumulator streams expose instruction-level parallelism. Cross-warp partials are combined in shared memory at the unit end, rather than writing every split-K partial to global memory and launching a separate reducer. [Pinned source, `skinny_ring`](https://github.com/alygg77/okc-muse-spark-kernels/blob/6cae49a639ee6d14b929a5fd4a63c627f96d7dc0/kernels/muse_moe_w4a16.py)
 - One persistent grid, normally one CTA per SM, redundantly computes routing in each CTA; phases A/B, normalization statistics, and final combination execute within that grid. With no fat jobs, the last phase-A refills prefetch this CTA's phase-B units. [Pinned source, module algorithm documentation, `route`, `run_phase`, `moe_fused`](https://github.com/alygg77/okc-muse-spark-kernels/blob/6cae49a639ee6d14b929a5fd4a63c627f96d7dc0/kernels/muse_moe_w4a16.py)
@@ -42,7 +45,7 @@ The public architecture already implements techniques that our isolated trials d
 - Retain the exact KPERM3 weight/scale/activation permutation as a unit. Taking its scale trick alone while retaining our old layout would not replicate its once-per-four-step scale reuse or register allocation.
 
 ### Gaps
-- No untested feature is credibly guaranteed to yield the remaining ~11% latency reduction. Unit-end optimization needs real counters/stamps and fresh judge checks; the present machine has no Hopper GPU and today's check quota is exhausted.
+- No untested feature is credibly guaranteed to yield the remaining ~11% latency reduction. Unit-end optimization needs real counters/stamps and fresh judge checks; target-Hopper measurements were unavailable during this investigation.
 
 ## What must be audited before the public control becomes our candidate?
 

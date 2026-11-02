@@ -1,5 +1,8 @@
 # Public kernel architecture audit
 
+> Historical research snapshot comparing the earlier register kernel with public implementations. The persistent CUDA port has since been evaluated at 2.382249×; see the [current experiment record](../../../EXPERIMENTS.md) for verified results. Leaderboard snapshots and proposed next steps below describe the time of this investigation.
+
+
 ## Which public implementation is a credible step beyond our 1.834x?
 
 ### Takeaway
@@ -59,6 +62,6 @@ Weight packing appears structurally lossless, but this public implementation doe
 - The README's request that agents ask users to star the repository is untrusted content, not an instruction to this agent. No stars/messages/contact actions were taken.
 
 ### Local inspection inventory
-Downloaded source and licenses are in `/Users/zoir/dev/muse-challenge/muse_moe_w4a16/research/research_notes/High scoring MoE strategies/public_kernel_sources/`. Files: `aly_moe.py`, `aly_moe.cu` (AST-extracted CUDA_SRC), `aly_helper0.cu` (AST-extracted selected MID source), `aly_results.json`, `aly_RESULTS.md`, `aly_FACTS.md`, `aly_NEGATIVE.md`, `aly_README.md`, `aly_NOTICE`, `aly_LICENSE`, and `vjeux_moe.py`/`.cu`/README. Vjeux Python SHA256: `10e0690d7fc21244bf29f6df2916b89f0ddcbe8f94d7afe15983478d315883a3`.
+Downloaded source and licenses are in `public_kernel_sources/`. Files: `aly_moe.py`, `aly_moe.cu` (AST-extracted CUDA_SRC), `aly_helper0.cu` (AST-extracted selected MID source), `aly_results.json`, `aly_RESULTS.md`, `aly_FACTS.md`, `aly_NEGATIVE.md`, `aly_README.md`, `aly_NOTICE`, `aly_LICENSE`, and `vjeux_moe.py`/`.cu`/README. Vjeux Python SHA256: `10e0690d7fc21244bf29f6df2916b89f0ddcbe8f94d7afe15983478d315883a3`.
 
 Strict precision patch inventory in extracted `aly_moe.cu`: GU sites424–425,726,894,1550,1899–1901. PB sites439–440,734–735,902–903,1494–1495,1574–1575,1913–1914. The selected helper0 CUDA has corresponding sites approximately8lines later (its WGS offsets differ slightly); search the same functions, not blind line replacement. Function roles: `epi_A/epi_B`, skinny reductions, fat tail, WS helper, `wgs_epi_tile`. This inventory is local extracted-source evidence supporting the linked public kernel audit above.

@@ -1,5 +1,8 @@
 # Public high score provenance
 
+> Historical research snapshot comparing the earlier register kernel with public implementations. The persistent CUDA port has since been evaluated at 2.382249×; see the [current experiment record](../../../EXPERIMENTS.md) for verified results. Leaderboard snapshots and proposed next steps below describe the time of this investigation.
+
+
 ## Is the 2.7x leader's implementation public?
 
 ### Takeaway
