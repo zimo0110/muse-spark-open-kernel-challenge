@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/operatorstack/open-kernel-challenge-solutions",
+  "commit": "6d9b77656b6c295e421be9e1424b0f8f99299b0a",
+  "source_path": "muse_moe_w4a16/submission.py",
+  "local_source_sha256": "281d56e94d22f7ebb440274d25c240697b4728af2586da252fb1befb1f35cc35",
+  "license": "MIT; full notice embedded in derivative register_candidate.py",
+  "reused": "warp-MMA distributed layouts; FP4 bit permutation/decode scheme; shared-activation layout helper routines; gate/up split helper",
+  "not_ours": "Published 1.832x result belongs to upstream team; our derivative has no GPU result yet"
+}

@@ -1,0 +1,67 @@
+okc run da2c5eb8d27d46ff on muse_moe_w4a16
+submission  /Users/zoir/dev/muse-challenge/muse_moe_w4a16/register_dual_tuned.py
+status      ok
+passed      true
+speedup     1.7710114296715438
+speedup_ci  [1.7444462582264706 1.7975766011166168]
+score_us    7593.683346523739
+tests       5/5 passed
+
+scored shapes (µs; speed of light is the reference's bound)
+case                                                         sglang      yours  speedup        sol  
+bs=1 load=decode 1 sharding=ep8                               80.82      48.67   1.660x      11.42  
+bs=16 load=decode 16 sharding=ep8                            189.71     111.60   1.700x      52.52  
+bs=32 load=decode 32 sharding=ep8                            213.15     146.54   1.455x      70.76  
+bs=8 load=verify 1 sharding=ep8                              143.23      84.18   1.701x      37.32  
+bs=128 load=verify 16 sharding=ep8                           463.63     220.37   2.104x     101.34  
+bs=256 load=verify 32 sharding=ep8                           616.43     293.61   2.099x     108.94  
+
+profile 0: bs=1 load=decode 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_register_dispatch                                                31.8 µs  84.8%      2
+_finish_register                                                   3.5 µs   9.4%      1
+_work_plan                                                         1.3 µs   3.4%      1
+_compact_routes                                                    0.9 µs   2.4%      1
+total                                                             37.5 µs
+
+profile 1: bs=16 load=decode 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_register_dispatch                                               105.8 µs  94.7%      2
+_finish_register                                                   3.6 µs   3.3%      1
+_work_plan                                                         1.3 µs   1.2%      1
+_compact_routes                                                    1.0 µs   0.9%      1
+total                                                            111.7 µs
+
+profile 2: bs=32 load=decode 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_register_dispatch                                               122.1 µs  95.1%      2
+_finish_register                                                   3.8 µs   3.0%      1
+_work_plan                                                         1.3 µs   1.0%      1
+_compact_routes                                                    1.1 µs   0.9%      1
+total                                                            128.4 µs
+
+profile 3: bs=8 load=verify 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_register_dispatch                                                59.5 µs  91.1%      2
+_finish_register                                                   3.6 µs   5.4%      1
+_work_plan                                                         1.2 µs   1.9%      1
+_compact_routes                                                    1.0 µs   1.5%      1
+total                                                             65.2 µs
+
+profile 4: bs=128 load=verify 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_dual_dispatch                                                   134.7 µs  61.1%      1
+_register_dispatch                                                78.6 µs  35.7%      1
+_finish_register                                                   4.2 µs   1.9%      1
+_work_plan                                                         1.6 µs   0.7%      1
+_compact_routes                                                    1.3 µs   0.6%      1
+total                                                            220.4 µs
+
+profile 5: bs=256 load=verify 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_dual_dispatch                                                   182.2 µs  60.5%      1
+_register_dispatch                                               105.7 µs  35.1%      1
+_finish_register                                                   8.1 µs   2.7%      1
+_work_plan                                                         3.9 µs   1.3%      2
+_compact_routes                                                    1.5 µs   0.5%      1
+total                                                            301.4 µs

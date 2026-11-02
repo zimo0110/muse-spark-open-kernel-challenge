@@ -1,0 +1,1004 @@
+{
+  "passed": true,
+  "hardware": "GB10",
+  "purpose": "actual candidate Python diagnostics integration",
+  "H200_performance": null,
+  "Hopper_async_validation": false,
+  "seconds": 2.448,
+  "GB10_integration_records": [
+    {
+      "seed": 47821,
+      "M": 16,
+      "cold_graph_us": {
+        "control": 1273.344,
+        "mid_coarse": 1273.232
+      },
+      "probe_over_control": {
+        "mid_coarse": 1.00122
+      },
+      "overhead_within_3pct": {
+        "mid_coarse": true
+      },
+      "consumer": {
+        "milestones_min_max_us": {
+          "route": [
+            2.336,
+            2.528
+          ],
+          "G1": [
+            779.84,
+            873.376
+          ],
+          "G2": [
+            1223.136,
+            1268.32
+          ],
+          "barrier": [
+            1268.96,
+            1269.152
+          ],
+          "final": [
+            1269.888,
+            1271.392
+          ]
+        },
+        "CTA_duration_p50_p95_max_us": {
+          "route": [
+            2.368,
+            2.464,
+            2.496
+          ],
+          "G1": [
+            817.248,
+            831.616,
+            871.008
+          ],
+          "G2": [
+            426.496,
+            459.36,
+            463.392
+          ],
+          "G2_to_barrier": [
+            20.384,
+            41.44,
+            46.016
+          ],
+          "final": [
+            0.896,
+            2.24,
+            2.368
+          ]
+        }
+      }
+    },
+    {
+      "seed": 47821,
+      "M": 32,
+      "cold_graph_us": {
+        "control": 1814.368,
+        "main_coarse": 1816.416,
+        "main_detail": 1819.872
+      },
+      "probe_over_control": {
+        "main_coarse": 1.00156,
+        "main_detail": 1.00348
+      },
+      "overhead_within_3pct": {
+        "main_coarse": true,
+        "main_detail": true
+      },
+      "consumer": {
+        "milestones_min_max_us": {
+          "route": [
+            3.776,
+            3.872
+          ],
+          "G1": [
+            1055.616,
+            1259.488
+          ],
+          "G2": [
+            1644.384,
+            1785.856
+          ],
+          "barrier": [
+            1786.336,
+            1786.784
+          ],
+          "final": [
+            1786.752,
+            1790.752
+          ]
+        },
+        "CTA_duration_p50_p95_max_us": {
+          "route": [
+            3.744,
+            3.776,
+            3.808
+          ],
+          "G1": [
+            1203.04,
+            1234.528,
+            1248.896
+          ],
+          "G2": [
+            552.992,
+            586.944,
+            598.912
+          ],
+          "G2_to_barrier": [
+            16.224,
+            82.176,
+            142.08
+          ],
+          "final": [
+            2.88,
+            3.776,
+            4.288
+          ],
+          "route_to_gather": [
+            5.44,
+            9.92,
+            11.936
+          ],
+          "gather_to_join": [
+            0.032,
+            0.032,
+            0.032
+          ]
+        }
+      },
+      "producer": {
+        "weight_A": {
+          "issue_window_us": 1244.032,
+          "logical_MiB": 288.0,
+          "stage_count": 8192,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.253,
+            7.363,
+            8.932
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "weight_B": {
+          "issue_window_us": 746.56,
+          "logical_MiB": 144.0,
+          "stage_count": 4096,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.203,
+            7.605,
+            12.107
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "activation_A": {
+          "issue_window_us": 1244.224,
+          "logical_MiB": 34.0,
+          "stage_count": 8192,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.259,
+            7.347,
+            8.944
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            5.792,
+            13.952,
+            17.952
+          ],
+          "dependency_wait_events": 34
+        },
+        "activation_B": {
+          "issue_window_us": 746.656,
+          "logical_MiB": 17.0,
+          "stage_count": 4096,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            5.621,
+            6.4,
+            9.893
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            35.904,
+            72.448
+          ],
+          "dependency_wait_events": 18
+        }
+      }
+    },
+    {
+      "seed": 47821,
+      "M": 128,
+      "cold_graph_us": {
+        "control": 2864.032,
+        "main_coarse": 2854.256,
+        "main_detail": 2849.28
+      },
+      "probe_over_control": {
+        "main_coarse": 0.9966,
+        "main_detail": 0.99538
+      },
+      "overhead_within_3pct": {
+        "main_coarse": true,
+        "main_detail": true
+      },
+      "consumer": {
+        "milestones_min_max_us": {
+          "route": [
+            5.28,
+            6.752
+          ],
+          "G1": [
+            1493.6,
+            2123.424
+          ],
+          "G2": [
+            2231.2,
+            2829.888
+          ],
+          "barrier": [
+            2830.304,
+            2830.816
+          ],
+          "final": [
+            2834.208,
+            2843.424
+          ]
+        },
+        "CTA_duration_p50_p95_max_us": {
+          "route": [
+            5.312,
+            5.696,
+            6.688
+          ],
+          "G1": [
+            1940.768,
+            2029.024,
+            2087.776
+          ],
+          "G2": [
+            813.824,
+            884.128,
+            975.104
+          ],
+          "G2_to_barrier": [
+            47.456,
+            413.376,
+            599.136
+          ],
+          "final": [
+            8.8,
+            11.36,
+            13.12
+          ],
+          "route_to_gather": [
+            21.088,
+            30.016,
+            30.368
+          ],
+          "gather_to_join": [
+            0.032,
+            0.032,
+            0.032
+          ]
+        }
+      },
+      "producer": {
+        "weight_A": {
+          "issue_window_us": 2058.976,
+          "logical_MiB": 450.0,
+          "stage_count": 12800,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.519,
+            7.549,
+            12.124
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "weight_B": {
+          "issue_window_us": 1342.752,
+          "logical_MiB": 225.0,
+          "stage_count": 6400,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            5.422,
+            8.983,
+            12.827
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "activation_A": {
+          "issue_window_us": 2059.168,
+          "logical_MiB": 88.0,
+          "stage_count": 12800,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.519,
+            7.581,
+            11.972
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            9.28,
+            18.88
+          ],
+          "dependency_wait_events": 20
+        },
+        "activation_B": {
+          "issue_window_us": 1342.592,
+          "logical_MiB": 44.0,
+          "stage_count": 6400,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            4.985,
+            8.594,
+            12.693
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            11.296,
+            187.424
+          ],
+          "dependency_wait_events": 10
+        }
+      }
+    },
+    {
+      "seed": 47821,
+      "M": 256,
+      "cold_graph_us": {
+        "control": 3325.456,
+        "main_coarse": 3389.856,
+        "main_detail": 3335.536
+      },
+      "probe_over_control": {
+        "main_coarse": 1.0106,
+        "main_detail": 1.0021
+      },
+      "overhead_within_3pct": {
+        "main_coarse": true,
+        "main_detail": true
+      },
+      "consumer": {
+        "milestones_min_max_us": {
+          "route": [
+            9.664,
+            9.76
+          ],
+          "G1": [
+            1733.344,
+            2471.264
+          ],
+          "G2": [
+            2653.76,
+            3298.88
+          ],
+          "barrier": [
+            3299.328,
+            3299.872
+          ],
+          "final": [
+            3308.48,
+            3317.056
+          ]
+        },
+        "CTA_duration_p50_p95_max_us": {
+          "route": [
+            9.696,
+            9.728,
+            9.76
+          ],
+          "G1": [
+            2269.76,
+            2402.272,
+            2449.824
+          ],
+          "G2": [
+            929.12,
+            1073.568,
+            1154.72
+          ],
+          "G2_to_barrier": [
+            57.248,
+            511.84,
+            645.728
+          ],
+          "final": [
+            14.56,
+            17.12,
+            17.6
+          ],
+          "route_to_gather": [
+            31.296,
+            38.848,
+            41.888
+          ],
+          "gather_to_join": [
+            0.032,
+            0.032,
+            0.032
+          ]
+        }
+      },
+      "producer": {
+        "weight_A": {
+          "issue_window_us": 2416.352,
+          "logical_MiB": 522.0,
+          "stage_count": 14848,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            7.688,
+            8.603,
+            9.301
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "weight_B": {
+          "issue_window_us": 1609.76,
+          "logical_MiB": 261.0,
+          "stage_count": 7424,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            5.83,
+            8.891,
+            14.779
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "activation_A": {
+          "issue_window_us": 2416.512,
+          "logical_MiB": 114.0,
+          "stage_count": 14848,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            7.665,
+            8.574,
+            9.275
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            9.056,
+            20.832
+          ],
+          "dependency_wait_events": 20
+        },
+        "activation_B": {
+          "issue_window_us": 1611.36,
+          "logical_MiB": 57.0,
+          "stage_count": 7424,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            5.376,
+            7.444,
+            10.165
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            106.624,
+            171.328
+          ],
+          "dependency_wait_events": 19
+        }
+      }
+    },
+    {
+      "seed": 73931,
+      "M": 16,
+      "cold_graph_us": {
+        "control": 1612.864,
+        "mid_coarse": 1618.288
+      },
+      "probe_over_control": {
+        "mid_coarse": 0.99984
+      },
+      "overhead_within_3pct": {
+        "mid_coarse": true
+      },
+      "consumer": {
+        "milestones_min_max_us": {
+          "route": [
+            2.304,
+            3.008
+          ],
+          "G1": [
+            997.6,
+            1091.2
+          ],
+          "G2": [
+            1557.536,
+            1604.16
+          ],
+          "barrier": [
+            1604.768,
+            1604.928
+          ],
+          "final": [
+            1605.728,
+            1607.008
+          ]
+        },
+        "CTA_duration_p50_p95_max_us": {
+          "route": [
+            2.336,
+            2.4,
+            2.976
+          ],
+          "G1": [
+            1039.04,
+            1060.704,
+            1088.896
+          ],
+          "G2": [
+            543.872,
+            572.416,
+            582.848
+          ],
+          "G2_to_barrier": [
+            15.168,
+            35.904,
+            47.264
+          ],
+          "final": [
+            0.96,
+            2.112,
+            2.208
+          ]
+        }
+      }
+    },
+    {
+      "seed": 73931,
+      "M": 32,
+      "cold_graph_us": {
+        "control": 1689.472,
+        "main_coarse": 1689.6,
+        "main_detail": 1690.64
+      },
+      "probe_over_control": {
+        "main_coarse": 0.99971,
+        "main_detail": 1.00161
+      },
+      "overhead_within_3pct": {
+        "main_coarse": true,
+        "main_detail": true
+      },
+      "consumer": {
+        "milestones_min_max_us": {
+          "route": [
+            3.552,
+            3.68
+          ],
+          "G1": [
+            969.856,
+            1220.48
+          ],
+          "G2": [
+            1472.8,
+            1682.944
+          ],
+          "barrier": [
+            1683.36,
+            1684.032
+          ],
+          "final": [
+            1683.968,
+            1689.696
+          ]
+        },
+        "CTA_duration_p50_p95_max_us": {
+          "route": [
+            3.616,
+            3.68,
+            3.68
+          ],
+          "G1": [
+            1123.584,
+            1154.976,
+            1200.288
+          ],
+          "G2": [
+            518.976,
+            538.368,
+            545.728
+          ],
+          "G2_to_barrier": [
+            24.704,
+            138.016,
+            210.72
+          ],
+          "final": [
+            3.296,
+            4.704,
+            6.176
+          ],
+          "route_to_gather": [
+            6.048,
+            16.512,
+            16.544
+          ],
+          "gather_to_join": [
+            0.032,
+            0.032,
+            0.032
+          ]
+        }
+      },
+      "producer": {
+        "weight_A": {
+          "issue_window_us": 1156.64,
+          "logical_MiB": 270.0,
+          "stage_count": 7680,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.57,
+            7.389,
+            7.846
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "weight_B": {
+          "issue_window_us": 705.344,
+          "logical_MiB": 135.0,
+          "stage_count": 3840,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.189,
+            7.28,
+            7.475
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "activation_A": {
+          "issue_window_us": 1156.8,
+          "logical_MiB": 34.0,
+          "stage_count": 7680,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.563,
+            7.373,
+            7.83
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            7.84,
+            8.384
+          ],
+          "dependency_wait_events": 8
+        },
+        "activation_B": {
+          "issue_window_us": 705.344,
+          "logical_MiB": 17.0,
+          "stage_count": 3840,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            5.798,
+            6.707,
+            7.373
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            33.088,
+            56.576
+          ],
+          "dependency_wait_events": 17
+        }
+      }
+    },
+    {
+      "seed": 73931,
+      "M": 128,
+      "cold_graph_us": {
+        "control": 2166.688,
+        "main_coarse": 2164.656,
+        "main_detail": 2173.648
+      },
+      "probe_over_control": {
+        "main_coarse": 0.99984,
+        "main_detail": 1.00326
+      },
+      "overhead_within_3pct": {
+        "main_coarse": true,
+        "main_detail": true
+      },
+      "consumer": {
+        "milestones_min_max_us": {
+          "route": [
+            6.88,
+            7.008
+          ],
+          "G1": [
+            1182.848,
+            1583.968
+          ],
+          "G2": [
+            1914.272,
+            2155.744
+          ],
+          "barrier": [
+            2156.16,
+            2156.64
+          ],
+          "final": [
+            2159.84,
+            2166.752
+          ]
+        },
+        "CTA_duration_p50_p95_max_us": {
+          "route": [
+            6.912,
+            6.976,
+            7.008
+          ],
+          "G1": [
+            1468.384,
+            1539.296,
+            1561.408
+          ],
+          "G2": [
+            637.024,
+            691.68,
+            752.704
+          ],
+          "G2_to_barrier": [
+            31.232,
+            195.104,
+            241.92
+          ],
+          "final": [
+            7.104,
+            9.408,
+            10.176
+          ],
+          "route_to_gather": [
+            15.328,
+            18.752,
+            19.072
+          ],
+          "gather_to_join": [
+            0.032,
+            0.032,
+            0.032
+          ]
+        }
+      },
+      "producer": {
+        "weight_A": {
+          "issue_window_us": 1562.688,
+          "logical_MiB": 342.0,
+          "stage_count": 9728,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.569,
+            9.402,
+            10.285
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "weight_B": {
+          "issue_window_us": 949.568,
+          "logical_MiB": 171.0,
+          "stage_count": 4864,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.007,
+            8.474,
+            17.632
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "activation_A": {
+          "issue_window_us": 1562.816,
+          "logical_MiB": 58.0,
+          "stage_count": 9728,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.557,
+            9.392,
+            10.326
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            7.296,
+            10.784
+          ],
+          "dependency_wait_events": 23
+        },
+        "activation_B": {
+          "issue_window_us": 949.568,
+          "logical_MiB": 29.0,
+          "stage_count": 4864,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            5.557,
+            7.157,
+            8.981
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            26.016,
+            170.08
+          ],
+          "dependency_wait_events": 17
+        }
+      }
+    },
+    {
+      "seed": 73931,
+      "M": 256,
+      "cold_graph_us": {
+        "control": 3363.072,
+        "main_coarse": 3219.216,
+        "main_detail": 3295.04
+      },
+      "probe_over_control": {
+        "main_coarse": 0.97719,
+        "main_detail": 0.99766
+      },
+      "overhead_within_3pct": {
+        "main_coarse": true,
+        "main_detail": true
+      },
+      "consumer": {
+        "milestones_min_max_us": {
+          "route": [
+            9.056,
+            9.12
+          ],
+          "G1": [
+            1730.56,
+            2330.656
+          ],
+          "G2": [
+            2710.144,
+            3171.36
+          ],
+          "barrier": [
+            3171.872,
+            3172.288
+          ],
+          "final": [
+            3180.96,
+            3191.52
+          ]
+        },
+        "CTA_duration_p50_p95_max_us": {
+          "route": [
+            9.056,
+            9.088,
+            9.12
+          ],
+          "G1": [
+            2000.704,
+            2289.12,
+            2298.976
+          ],
+          "G2": [
+            946.112,
+            1028.608,
+            1121.408
+          ],
+          "G2_to_barrier": [
+            116.544,
+            288.16,
+            461.76
+          ],
+          "final": [
+            12.96,
+            17.152,
+            19.488
+          ],
+          "route_to_gather": [
+            28.992,
+            39.232,
+            44.032
+          ],
+          "gather_to_join": [
+            0.032,
+            0.032,
+            0.032
+          ]
+        }
+      },
+      "producer": {
+        "weight_A": {
+          "issue_window_us": 2342.848,
+          "logical_MiB": 504.0,
+          "stage_count": 14336,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.65,
+            7.714,
+            10.769
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "weight_B": {
+          "issue_window_us": 1448.544,
+          "logical_MiB": 252.0,
+          "stage_count": 7168,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            5.971,
+            7.944,
+            9.6
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dependency_wait_events": 0
+        },
+        "activation_A": {
+          "issue_window_us": 2343.008,
+          "logical_MiB": 112.0,
+          "stage_count": 14336,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            6.639,
+            7.746,
+            10.661
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            11.552,
+            22.048
+          ],
+          "dependency_wait_events": 24
+        },
+        "activation_B": {
+          "issue_window_us": 1452.96,
+          "logical_MiB": 56.0,
+          "stage_count": 7168,
+          "empty_wait_sample_mean_us_p50_p95_max": [
+            5.722,
+            7.62,
+            9.221
+          ],
+          "dependency_wait_us_p50_p95_max": [
+            0.0,
+            57.536,
+            199.04
+          ],
+          "dependency_wait_events": 13
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+okc run fc8f748e8ef64ea9 on muse_moe_w4a16
+submission  /Users/zoir/dev/muse-challenge/muse_moe_w4a16/submission.py
+status      ok
+passed      true
+speedup     0.22318007966353118
+speedup_ci  [0.2198323784685782 0.22652778085848413]
+score_us    60258.51420196243
+tests       5/5 passed
+
+scored shapes (µs; speed of light is the reference's bound)
+case                                                         sglang      yours  speedup        sol  
+bs=1 load=decode 1 sharding=ep8                               79.66     481.79   0.165x      11.42  
+bs=16 load=decode 16 sharding=ep8                            188.27     866.60   0.217x      52.52  
+bs=32 load=decode 32 sharding=ep8                            203.46    1062.42   0.192x      70.76  
+bs=8 load=verify 1 sharding=ep8                              152.32     688.38   0.221x      37.32  
+bs=128 load=verify 16 sharding=ep8                           473.36    1667.53   0.284x     101.34  
+bs=256 load=verify 32 sharding=ep8                           615.50    2152.23   0.286x     108.94  
+
+profile 0: bs=1 load=decode 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                            417.0 µs  98.2%      2
+_finish                                                            5.7 µs   1.3%      1
+_routes                                                            0.9 µs   0.2%      1
+_schedule                                                          0.9 µs   0.2%      1
+total                                                            424.5 µs
+
+profile 1: bs=16 load=decode 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                            867.2 µs  99.1%      2
+_finish                                                            6.2 µs   0.7%      1
+_routes                                                            1.1 µs   0.1%      1
+_schedule                                                          1.0 µs   0.1%      1
+total                                                            875.4 µs
+
+profile 2: bs=32 load=decode 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                           1172.1 µs  99.2%      2
+_finish                                                            6.9 µs   0.6%      1
+_routes                                                            1.2 µs   0.1%      1
+_schedule                                                          0.9 µs   0.1%      1
+total                                                           1181.0 µs
+
+profile 3: bs=8 load=verify 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                            507.8 µs  98.4%      2
+_finish                                                            6.1 µs   1.2%      1
+_routes                                                            1.0 µs   0.2%      1
+_schedule                                                          0.9 µs   0.2%      1
+total                                                            515.8 µs
+
+profile 4: bs=128 load=verify 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                           1659.7 µs  99.4%      2
+_finish                                                            7.6 µs   0.5%      1
+_routes                                                            1.4 µs   0.1%      1
+_schedule                                                          1.0 µs   0.1%      1
+total                                                           1669.7 µs
+
+profile 5: bs=256 load=verify 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                           2308.2 µs  99.5%      2
+_finish                                                            8.4 µs   0.4%      1
+_routes                                                            1.5 µs   0.1%      1
+_schedule                                                          1.0 µs   0.0%      1
+total                                                           2319.1 µs

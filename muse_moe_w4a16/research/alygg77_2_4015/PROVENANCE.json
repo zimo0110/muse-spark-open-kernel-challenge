@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/alygg77/okc-muse-spark-kernels",
+  "commit": "6cae49a639ee6d14b929a5fd4a63c627f96d7dc0",
+  "upstream_path": "kernels/muse_moe_w4a16.py",
+  "upstream_sha256": "b33070898927b7b92df6c7a2515f9c02dd12723c43ca63682fa164e915dd4281",
+  "upstream_recorded_job": "e1bcad5a55cd4a29",
+  "upstream_recorded_speedup": 2.4015,
+  "not_ours": "Public historical result; not reproduced by us, not a score for local ports.",
+  "lineage": "vjeux/okc-2026 f35a41ee1c13e316dabbf772830d47b23b453393; alygg77 KPERM3",
+  "license": "Apache-2.0; LICENSE/NOTICE retained beside this provenance and original file attribution retained",
+  "changes": [
+    "Drop unreachable BIG=true template references in all three TINY launch sites",
+    "BF16 variant: all five GU and six PB epilogue sites patched in BOTH CUDA sources",
+    "Distinct extension names avoid control/port build-cache collisions"
+  ],
+  "unchanged": [
+    "All four shape variants and selected helper0",
+    "Lossless packed weights and scale guards",
+    "Routing, persistent scheduling, streamK fixups and scratch synchronization"
+  ],
+  "activation_storage_note": "BF16 port rounds stage values; the existing ybuf scratch container remains FP32 holding exactly BF16-representable values.",
+  "variants": [
+    {
+      "file": "cuda_persistent_lean.py",
+      "sha256": "54122070ba30fc50d447e6d2149b4a683174c3a45bfbfd26711edfa51e329e85",
+      "status": "Python syntax verified; CUDA compilation/correctness/performance UNVERIFIED"
+    },
+    {
+      "file": "cuda_persistent_bf16.py",
+      "sha256": "91766194b46a086f3d772238d25f86e87c4668109384798bb8245f4f66f7d9dd",
+      "status": "Python syntax verified; CUDA compilation/correctness/performance UNVERIFIED"
+    }
+  ]
+}

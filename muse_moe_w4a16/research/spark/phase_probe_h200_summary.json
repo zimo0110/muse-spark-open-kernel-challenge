@@ -1,0 +1,400 @@
+{
+  "job": "b6387d8f931647f0",
+  "status": "done",
+  "passed": true,
+  "speedup_unchanged_timed_path": 2.3550241644807186,
+  "diagnostic_records": 8,
+  "expected_records": 8,
+  "summary": [
+    {
+      "M": 16,
+      "seeds": 2,
+      "control_event_us": 106.224,
+      "probes_within_3pct": true,
+      "probe_over_control": {
+        "mid_coarse": [
+          1.00482,
+          1.00821
+        ]
+      },
+      "consumer_CTA_us": {
+        "route": {
+          "median_of_p50": 2.528,
+          "largest_p95": 2.656,
+          "largest_max": 2.752
+        },
+        "G1": {
+          "median_of_p50": 60.992,
+          "largest_p95": 70.88,
+          "largest_max": 71.52
+        },
+        "G2": {
+          "median_of_p50": 31.456,
+          "largest_p95": 37.312,
+          "largest_max": 40.032
+        },
+        "G2_to_barrier": {
+          "median_of_p50": 5.12,
+          "largest_p95": 7.776,
+          "largest_max": 8.256
+        },
+        "final": {
+          "median_of_p50": 0.224,
+          "largest_p95": 0.736,
+          "largest_max": 0.96
+        }
+      }
+    },
+    {
+      "M": 32,
+      "seeds": 2,
+      "control_event_us": 136.824,
+      "probes_within_3pct": true,
+      "probe_over_control": {
+        "main_coarse": [
+          1.00208,
+          1.00142
+        ],
+        "main_detail": [
+          1.00917,
+          1.00406
+        ]
+      },
+      "consumer_CTA_us": {
+        "route": {
+          "median_of_p50": 1.872,
+          "largest_p95": 2.048,
+          "largest_max": 2.08
+        },
+        "G1": {
+          "median_of_p50": 81.536,
+          "largest_p95": 85.664,
+          "largest_max": 87.04
+        },
+        "G2": {
+          "median_of_p50": 36.896,
+          "largest_p95": 40.672,
+          "largest_max": 44.288
+        },
+        "G2_to_barrier": {
+          "median_of_p50": 4.656,
+          "largest_p95": 7.84,
+          "largest_max": 8.48
+        },
+        "final": {
+          "median_of_p50": 0.72,
+          "largest_p95": 4.032,
+          "largest_max": 4.544
+        },
+        "route_to_gather": {
+          "median_of_p50": 2.16,
+          "largest_p95": 2.688,
+          "largest_max": 2.88
+        },
+        "gather_to_join": {
+          "median_of_p50": 0.032,
+          "largest_p95": 0.032,
+          "largest_max": 0.064
+        }
+      },
+      "producer": {
+        "weight_A": {
+          "logical_MiB_per_seed": [
+            288.0,
+            270.0
+          ],
+          "issue_window_us_per_seed": [
+            83.904,
+            78.528
+          ],
+          "largest_dependency_wait_p95_us": 0.0,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.621,
+            1.408
+          ]
+        },
+        "weight_B": {
+          "logical_MiB_per_seed": [
+            144.0,
+            135.0
+          ],
+          "issue_window_us_per_seed": [
+            49.248,
+            57.088
+          ],
+          "largest_dependency_wait_p95_us": 0.0,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.792,
+            1.92
+          ]
+        },
+        "activation_A": {
+          "logical_MiB_per_seed": [
+            34.0,
+            34.0
+          ],
+          "issue_window_us_per_seed": [
+            84.768,
+            79.328
+          ],
+          "largest_dependency_wait_p95_us": 0.0,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.653,
+            1.483
+          ]
+        },
+        "activation_B": {
+          "logical_MiB_per_seed": [
+            17.0,
+            17.0
+          ],
+          "issue_window_us_per_seed": [
+            49.216,
+            57.184
+          ],
+          "largest_dependency_wait_p95_us": 6.432,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.296,
+            1.376
+          ]
+        }
+      }
+    },
+    {
+      "M": 128,
+      "seeds": 2,
+      "control_event_us": 174.496,
+      "probes_within_3pct": true,
+      "probe_over_control": {
+        "main_coarse": [
+          1.01385,
+          0.99626
+        ],
+        "main_detail": [
+          1.00281,
+          1.0028
+        ]
+      },
+      "consumer_CTA_us": {
+        "route": {
+          "median_of_p50": 2.24,
+          "largest_p95": 2.464,
+          "largest_max": 2.496
+        },
+        "G1": {
+          "median_of_p50": 102.512,
+          "largest_p95": 111.52,
+          "largest_max": 114.88
+        },
+        "G2": {
+          "median_of_p50": 47.712,
+          "largest_p95": 58.464,
+          "largest_max": 63.36
+        },
+        "G2_to_barrier": {
+          "median_of_p50": 7.392,
+          "largest_p95": 12.064,
+          "largest_max": 13.792
+        },
+        "final": {
+          "median_of_p50": 4.784,
+          "largest_p95": 5.664,
+          "largest_max": 5.728
+        },
+        "route_to_gather": {
+          "median_of_p50": 2.992,
+          "largest_p95": 4.032,
+          "largest_max": 4.8
+        },
+        "gather_to_join": {
+          "median_of_p50": 0.032,
+          "largest_p95": 0.032,
+          "largest_max": 0.064
+        }
+      },
+      "producer": {
+        "weight_A": {
+          "logical_MiB_per_seed": [
+            396.0,
+            342.0
+          ],
+          "issue_window_us_per_seed": [
+            112.128,
+            99.84
+          ],
+          "largest_dependency_wait_p95_us": 0.0,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.19,
+            1.357
+          ]
+        },
+        "weight_B": {
+          "logical_MiB_per_seed": [
+            198.0,
+            171.0
+          ],
+          "issue_window_us_per_seed": [
+            69.312,
+            65.952
+          ],
+          "largest_dependency_wait_p95_us": 0.0,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.696,
+            2.336
+          ]
+        },
+        "activation_A": {
+          "logical_MiB_per_seed": [
+            62.0,
+            66.0
+          ],
+          "issue_window_us_per_seed": [
+            112.64,
+            100.224
+          ],
+          "largest_dependency_wait_p95_us": 1.152,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.216,
+            1.171
+          ]
+        },
+        "activation_B": {
+          "logical_MiB_per_seed": [
+            31.0,
+            33.0
+          ],
+          "issue_window_us_per_seed": [
+            69.536,
+            66.368
+          ],
+          "largest_dependency_wait_p95_us": 9.76,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.387,
+            1.856
+          ]
+        }
+      }
+    },
+    {
+      "M": 256,
+      "seeds": 2,
+      "control_event_us": 233.68,
+      "probes_within_3pct": true,
+      "probe_over_control": {
+        "main_coarse": [
+          1.0029,
+          1.00718
+        ],
+        "main_detail": [
+          1.00021,
+          1.00312
+        ]
+      },
+      "consumer_CTA_us": {
+        "route": {
+          "median_of_p50": 3.312,
+          "largest_p95": 3.552,
+          "largest_max": 3.616
+        },
+        "G1": {
+          "median_of_p50": 135.984,
+          "largest_p95": 154.752,
+          "largest_max": 161.76
+        },
+        "G2": {
+          "median_of_p50": 66.208,
+          "largest_p95": 75.328,
+          "largest_max": 80.544
+        },
+        "G2_to_barrier": {
+          "median_of_p50": 13.824,
+          "largest_p95": 21.824,
+          "largest_max": 24.48
+        },
+        "final": {
+          "median_of_p50": 6.672,
+          "largest_p95": 8.16,
+          "largest_max": 9.248
+        },
+        "route_to_gather": {
+          "median_of_p50": 5.312,
+          "largest_p95": 6.144,
+          "largest_max": 8.48
+        },
+        "gather_to_join": {
+          "median_of_p50": 0.032,
+          "largest_p95": 0.064,
+          "largest_max": 0.064
+        }
+      },
+      "producer": {
+        "weight_A": {
+          "logical_MiB_per_seed": [
+            468.0,
+            540.0
+          ],
+          "issue_window_us_per_seed": [
+            137.792,
+            156.544
+          ],
+          "largest_dependency_wait_p95_us": 0.0,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.317,
+            3.323
+          ]
+        },
+        "weight_B": {
+          "logical_MiB_per_seed": [
+            234.0,
+            270.0
+          ],
+          "issue_window_us_per_seed": [
+            83.488,
+            94.048
+          ],
+          "largest_dependency_wait_p95_us": 0.0,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            2.016,
+            1.56
+          ]
+        },
+        "activation_A": {
+          "logical_MiB_per_seed": [
+            118.0,
+            134.0
+          ],
+          "issue_window_us_per_seed": [
+            138.4,
+            156.992
+          ],
+          "largest_dependency_wait_p95_us": 2.88,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.399,
+            3.776
+          ]
+        },
+        "activation_B": {
+          "logical_MiB_per_seed": [
+            59.0,
+            67.0
+          ],
+          "issue_window_us_per_seed": [
+            83.712,
+            94.432
+          ],
+          "largest_dependency_wait_p95_us": 9.312,
+          "sampled_empty_wait_mean_p95_us_per_seed": [
+            1.493,
+            0.88
+          ]
+        }
+      }
+    }
+  ],
+  "cautions": [
+    "Milestones overlap across CTAs; these are not additive phase costs.",
+    "Logical bytes issued are not measured HBM traffic.",
+    "Empty-ring waits sample one in16; they are not total stall time.",
+    "Probe durations are unperturbed only if paired overhead supports that interpretation."
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "sha": "3b15eb8a6a16e0519378e28ea6c9b44d04e0a613",
+  "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/3b15eb8a6a16e0519378e28ea6c9b44d04e0a613",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c07450ec7745fbab41b92bafe43a7ed00003975f",
+      "size": 73,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/c07450ec7745fbab41b92bafe43a7ed00003975f"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a04e2f970ed6327ba7d027804cb91f7a0d0c1d7",
+      "size": 7791,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/4a04e2f970ed6327ba7d027804cb91f7a0d0c1d7"
+    },
+    {
+      "path": "muse_attention_decode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ce3b144348d39bb874019a15b560649850b3388",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/6ce3b144348d39bb874019a15b560649850b3388"
+    },
+    {
+      "path": "muse_attention_decode/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "022830ad5b238b619bee802f9ddb3c23f005a841",
+      "size": 2720,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/022830ad5b238b619bee802f9ddb3c23f005a841"
+    },
+    {
+      "path": "muse_attention_decode/TASK.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13089e62828ceea600cf2a30bb8bad6c151d48e4",
+      "size": 9638,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/13089e62828ceea600cf2a30bb8bad6c151d48e4"
+    },
+    {
+      "path": "muse_attention_decode/baseline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ac5e2e62360a28bcc03170c946b52347b021cfe",
+      "size": 6178,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/2ac5e2e62360a28bcc03170c946b52347b021cfe"
+    },
+    {
+      "path": "muse_attention_decode/checks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc51923c9041b04b0ce9e57348f10cfae84b73d9",
+      "size": 2484,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/bc51923c9041b04b0ce9e57348f10cfae84b73d9"
+    },
+    {
+      "path": "muse_attention_decode/profiles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55a5629db5c0b5d022b195aeacebe5fade4d2908",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/55a5629db5c0b5d022b195aeacebe5fade4d2908"
+    },
+    {
+      "path": "muse_attention_decode/profiles/submission.2827c6e61a784868.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b7c7f5cad56ae99d6bcd4eec46e2b57e182ce39",
+      "size": 74650,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/0b7c7f5cad56ae99d6bcd4eec46e2b57e182ce39"
+    },
+    {
+      "path": "muse_attention_decode/profiles/submission.2827c6e61a784868.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea183d6e70653fe045daf7e8499dcd4b7d0ef77e",
+      "size": 6287,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/ea183d6e70653fe045daf7e8499dcd4b7d0ef77e"
+    },
+    {
+      "path": "muse_attention_decode/reference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "490ef92dbfc085784802a65047f12ffbfda2ac32",
+      "size": 19275,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/490ef92dbfc085784802a65047f12ffbfda2ac32"
+    },
+    {
+      "path": "muse_attention_decode/submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ae30d24058745a28f13c50021f7f387fe3da7bc",
+      "size": 154604,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/3ae30d24058745a28f13c50021f7f387fe3da7bc"
+    },
+    {
+      "path": "muse_bf16_proj",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "19e4aa79773e970f46c26c7076e6a10f971445e6",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/19e4aa79773e970f46c26c7076e6a10f971445e6"
+    },
+    {
+      "path": "muse_bf16_proj/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7ac0dfe39ab6684e8243dbada2789230fcaee10",
+      "size": 2706,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/f7ac0dfe39ab6684e8243dbada2789230fcaee10"
+    },
+    {
+      "path": "muse_bf16_proj/TASK.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da91e807376dbf0b3ffc1f0b3fa7347351817be7",
+      "size": 8264,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/da91e807376dbf0b3ffc1f0b3fa7347351817be7"
+    },
+    {
+      "path": "muse_bf16_proj/baseline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4cde4b06c4c75622bafbd78d19fe4e3406c7a8d",
+      "size": 2397,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/a4cde4b06c4c75622bafbd78d19fe4e3406c7a8d"
+    },
+    {
+      "path": "muse_bf16_proj/checks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc51923c9041b04b0ce9e57348f10cfae84b73d9",
+      "size": 2484,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/bc51923c9041b04b0ce9e57348f10cfae84b73d9"
+    },
+    {
+      "path": "muse_bf16_proj/profiles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4aeff3601e11428cf4b891ee0a591c047b2e012b",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/4aeff3601e11428cf4b891ee0a591c047b2e012b"
+    },
+    {
+      "path": "muse_bf16_proj/profiles/submission.66361edeab434645.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f45cb028f1dfc6d0b3a0b48b7bb2c6696b07f23e",
+      "size": 176266,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/f45cb028f1dfc6d0b3a0b48b7bb2c6696b07f23e"
+    },
+    {
+      "path": "muse_bf16_proj/profiles/submission.66361edeab434645.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c978bb6ec16b1429795ac405e40b00fab111a4c",
+      "size": 12387,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/2c978bb6ec16b1429795ac405e40b00fab111a4c"
+    },
+    {
+      "path": "muse_bf16_proj/profiles/submission.c512f73af0454fa2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df2dc80547c9aaacd283c35c5845c13dce1c42f4",
+      "size": 176587,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/df2dc80547c9aaacd283c35c5845c13dce1c42f4"
+    },
+    {
+      "path": "muse_bf16_proj/profiles/submission.c512f73af0454fa2.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1b0bcdbf9080f098ae7ba28341f20c442665f2c",
+      "size": 12387,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/b1b0bcdbf9080f098ae7ba28341f20c442665f2c"
+    },
+    {
+      "path": "muse_bf16_proj/reference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab244d54a6b77bd990fe56f8eb047658f815c3ce",
+      "size": 5155,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/ab244d54a6b77bd990fe56f8eb047658f815c3ce"
+    },
+    {
+      "path": "muse_bf16_proj/submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3999820b14433482a18a9c0f3f5672dd47dcee48",
+      "size": 633375,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/3999820b14433482a18a9c0f3f5672dd47dcee48"
+    },
+    {
+      "path": "muse_decode_layer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "daebab704c5688116b14f7a9c240f61605a8caf7",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/daebab704c5688116b14f7a9c240f61605a8caf7"
+    },
+    {
+      "path": "muse_decode_layer/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d69f6867322a260a2784096ab38d3219139c5d4",
+      "size": 2712,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/4d69f6867322a260a2784096ab38d3219139c5d4"
+    },
+    {
+      "path": "muse_decode_layer/TASK.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcf3c2e9c317578fe1b9edee0489d73e9aa85bfe",
+      "size": 9853,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/fcf3c2e9c317578fe1b9edee0489d73e9aa85bfe"
+    },
+    {
+      "path": "muse_decode_layer/baseline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7706aee5c085b4fc8819835e5a7ec4e3f59a0833",
+      "size": 18993,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/7706aee5c085b4fc8819835e5a7ec4e3f59a0833"
+    },
+    {
+      "path": "muse_decode_layer/checks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc51923c9041b04b0ce9e57348f10cfae84b73d9",
+      "size": 2484,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/bc51923c9041b04b0ce9e57348f10cfae84b73d9"
+    },
+    {
+      "path": "muse_decode_layer/nvfp4.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa688f50e4bdbf500c5a09e9f546ec37c68e3dad",
+      "size": 5929,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/aa688f50e4bdbf500c5a09e9f546ec37c68e3dad"
+    },
+    {
+      "path": "muse_decode_layer/profiles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2be987948914b0f0f1678ffad440db2472ff0a36",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/2be987948914b0f0f1678ffad440db2472ff0a36"
+    },
+    {
+      "path": "muse_decode_layer/profiles/submission.5e7cbd571cc54e31.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46e3299d5c434c89c4374f6b9dcf41e88351172b",
+      "size": 60717,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/46e3299d5c434c89c4374f6b9dcf41e88351172b"
+    },
+    {
+      "path": "muse_decode_layer/profiles/submission.5e7cbd571cc54e31.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b71126fd9fbff27538fd54f309bab519084bad9",
+      "size": 16813,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/0b71126fd9fbff27538fd54f309bab519084bad9"
+    },
+    {
+      "path": "muse_decode_layer/profiles/submission.f60b136cfdc242cb.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5688fa973bb9fc3b9e8a74d755f9bce0c18ed27",
+      "size": 59268,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/b5688fa973bb9fc3b9e8a74d755f9bce0c18ed27"
+    },
+    {
+      "path": "muse_decode_layer/profiles/submission.f60b136cfdc242cb.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f42710cc51ea11dfedb7566932de64b083290e0",
+      "size": 15389,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/3f42710cc51ea11dfedb7566932de64b083290e0"
+    },
+    {
+      "path": "muse_decode_layer/reference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f92aa2db6ba064bc686ed5369f979cfe00d4ff44",
+      "size": 35035,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/f92aa2db6ba064bc686ed5369f979cfe00d4ff44"
+    },
+    {
+      "path": "muse_decode_layer/submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2556dbdddf85ab6b72866bf756a5953d6be6521",
+      "size": 568813,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/a2556dbdddf85ab6b72866bf756a5953d6be6521"
+    },
+    {
+      "path": "muse_moe_w4a16",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dfd3db03efb8f0814113b8e05321a01f38e41a08",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/dfd3db03efb8f0814113b8e05321a01f38e41a08"
+    },
+    {
+      "path": "muse_moe_w4a16/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "699b46245ad2f96c8ed4b757ec8ed5380363fcd6",
+      "size": 2706,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/699b46245ad2f96c8ed4b757ec8ed5380363fcd6"
+    },
+    {
+      "path": "muse_moe_w4a16/TASK.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1755b9ecebe4f52825244681682b68822af97b97",
+      "size": 6782,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/1755b9ecebe4f52825244681682b68822af97b97"
+    },
+    {
+      "path": "muse_moe_w4a16/baseline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "489b210f27a38ffb3f83b8da3f297b6f569ea57f",
+      "size": 7086,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/489b210f27a38ffb3f83b8da3f297b6f569ea57f"
+    },
+    {
+      "path": "muse_moe_w4a16/checks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc51923c9041b04b0ce9e57348f10cfae84b73d9",
+      "size": 2484,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/bc51923c9041b04b0ce9e57348f10cfae84b73d9"
+    },
+    {
+      "path": "muse_moe_w4a16/nvfp4.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa688f50e4bdbf500c5a09e9f546ec37c68e3dad",
+      "size": 5929,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/aa688f50e4bdbf500c5a09e9f546ec37c68e3dad"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f57db650f53d515763d7aeab67e5c0d05fb258f",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/4f57db650f53d515763d7aeab67e5c0d05fb258f"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.3ed21907cbff49be.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "908d5e6f28cfdf5774e4a6e8f0541761c81d0b3d",
+      "size": 51864,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/908d5e6f28cfdf5774e4a6e8f0541761c81d0b3d"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.3ed21907cbff49be.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62ba50b24c37fa7f9959ace1da821e745d477698",
+      "size": 2833,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/62ba50b24c37fa7f9959ace1da821e745d477698"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.43a32a0907484ff0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "891384bc3396c19ea29513f6bbbe9dbe76d71578",
+      "size": 53697,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/891384bc3396c19ea29513f6bbbe9dbe76d71578"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.43a32a0907484ff0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1305ad08bd7670752b17c41ee669ff2fac526979",
+      "size": 4613,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/1305ad08bd7670752b17c41ee669ff2fac526979"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.c31a014ad5d948da.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "637425e02b4aeddb3d62f11f1d61816d4d2f5a30",
+      "size": 53342,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/637425e02b4aeddb3d62f11f1d61816d4d2f5a30"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.c31a014ad5d948da.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49542aa2d7b0f94ad7462f9250115f28f8552b5a",
+      "size": 4258,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/49542aa2d7b0f94ad7462f9250115f28f8552b5a"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.d56631b167db4a14.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33dd27a83ec15be684bdffaed81e59a638d164e6",
+      "size": 53372,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/33dd27a83ec15be684bdffaed81e59a638d164e6"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.d56631b167db4a14.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62632656d4fb1a400b727297cec232328ac29063",
+      "size": 4256,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/62632656d4fb1a400b727297cec232328ac29063"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.e3f7712e6e274a00.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b3d239f05e1effcd7bf9885fabd9743fe490a92",
+      "size": 53373,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/8b3d239f05e1effcd7bf9885fabd9743fe490a92"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.e3f7712e6e274a00.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dd211003c5cbcb3b39c7378b5546a45d28124df",
+      "size": 4257,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/6dd211003c5cbcb3b39c7378b5546a45d28124df"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.e78fb610673d40e2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "128c93a9331ecaece99534e33f1574f5e422ff86",
+      "size": 53606,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/128c93a9331ecaece99534e33f1574f5e422ff86"
+    },
+    {
+      "path": "muse_moe_w4a16/profiles/submission.e78fb610673d40e2.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c34e055f66f9ccaf7af54d6b90269330f6fcea48",
+      "size": 4613,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/c34e055f66f9ccaf7af54d6b90269330f6fcea48"
+    },
+    {
+      "path": "muse_moe_w4a16/reference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b937352204a206cc2de669d3aa36a014755afe86",
+      "size": 6764,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/b937352204a206cc2de669d3aa36a014755afe86"
+    },
+    {
+      "path": "muse_moe_w4a16/submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95b7860157c2d7289f07955c6683401707d22d57",
+      "size": 179162,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/95b7860157c2d7289f07955c6683401707d22d57"
+    },
+    {
+      "path": "muse_prefill_layer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e83ce886b67ca890b6226f7b91bcc70f67eaeab",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/8e83ce886b67ca890b6226f7b91bcc70f67eaeab"
+    },
+    {
+      "path": "muse_prefill_layer/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dda036652f97fe1424f21d268687b2617438074",
+      "size": 2714,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/6dda036652f97fe1424f21d268687b2617438074"
+    },
+    {
+      "path": "muse_prefill_layer/TASK.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2c3b51a981085c76b3dcf55a01b1de76f6c62d8",
+      "size": 8706,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/a2c3b51a981085c76b3dcf55a01b1de76f6c62d8"
+    },
+    {
+      "path": "muse_prefill_layer/baseline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7706aee5c085b4fc8819835e5a7ec4e3f59a0833",
+      "size": 18993,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/7706aee5c085b4fc8819835e5a7ec4e3f59a0833"
+    },
+    {
+      "path": "muse_prefill_layer/checks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc51923c9041b04b0ce9e57348f10cfae84b73d9",
+      "size": 2484,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/bc51923c9041b04b0ce9e57348f10cfae84b73d9"
+    },
+    {
+      "path": "muse_prefill_layer/nvfp4.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa688f50e4bdbf500c5a09e9f546ec37c68e3dad",
+      "size": 5929,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/aa688f50e4bdbf500c5a09e9f546ec37c68e3dad"
+    },
+    {
+      "path": "muse_prefill_layer/profiles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53b5ae53178315a19712cf39a32a1c1cf0ef3580",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/53b5ae53178315a19712cf39a32a1c1cf0ef3580"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.0ceef6beb3f24141.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0b29efb646d3a62999420753a7452d1c95bef32",
+      "size": 31914,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/d0b29efb646d3a62999420753a7452d1c95bef32"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.0ceef6beb3f24141.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "910baf21a64f1402b595cba40a394641e0564834",
+      "size": 12668,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/910baf21a64f1402b595cba40a394641e0564834"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.466e2943491845bf.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68806c67df7febc8702077025fbdfb030604859c",
+      "size": 31967,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/68806c67df7febc8702077025fbdfb030604859c"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.466e2943491845bf.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea5a61b90ecb8bea0fc4f7faedec58c2ec5dd393",
+      "size": 12669,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/ea5a61b90ecb8bea0fc4f7faedec58c2ec5dd393"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.4bfc19c5ce554ac4.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4af7a92fd66ce66031d2cc8bf2f1c9db7d9bb2d9",
+      "size": 32135,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/4af7a92fd66ce66031d2cc8bf2f1c9db7d9bb2d9"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.4bfc19c5ce554ac4.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b510155db1d13e9ed49424bf06b52bd4726b8884",
+      "size": 12848,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/b510155db1d13e9ed49424bf06b52bd4726b8884"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.72b01a0fde704971.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8c7c2725991838b920ad49386adf5832fa48423",
+      "size": 32292,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/b8c7c2725991838b920ad49386adf5832fa48423"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.72b01a0fde704971.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70f016f00dffb1e7e00f5c42b485b9d18fdc52a4",
+      "size": 13021,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/70f016f00dffb1e7e00f5c42b485b9d18fdc52a4"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.81e220459e5344b7.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e8cb528ee1bf218227f85208ae4f52fbdf260b7",
+      "size": 32114,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/9e8cb528ee1bf218227f85208ae4f52fbdf260b7"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.81e220459e5344b7.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "950170b480d847e6f9051e9034ea45e425eb9c89",
+      "size": 12848,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/950170b480d847e6f9051e9034ea45e425eb9c89"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.9398f4d27aec44a3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f08143561df0fb0cfb47a9d5dc1224bd1923d878",
+      "size": 32274,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/f08143561df0fb0cfb47a9d5dc1224bd1923d878"
+    },
+    {
+      "path": "muse_prefill_layer/profiles/submission.9398f4d27aec44a3.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3752311faab5df341c86c00162fe56f3a89cbd00",
+      "size": 13019,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/3752311faab5df341c86c00162fe56f3a89cbd00"
+    },
+    {
+      "path": "muse_prefill_layer/reference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f92aa2db6ba064bc686ed5369f979cfe00d4ff44",
+      "size": 35035,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/f92aa2db6ba064bc686ed5369f979cfe00d4ff44"
+    },
+    {
+      "path": "muse_prefill_layer/submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21771c340f77f15dc9314932881ff89a2fb833ab",
+      "size": 292815,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/21771c340f77f15dc9314932881ff89a2fb833ab"
+    },
+    {
+      "path": "serving",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fbd85226fe70a420a3b860f3dddba0a8b7daceb8",
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/trees/fbd85226fe70a420a3b860f3dddba0a8b7daceb8"
+    },
+    {
+      "path": "serving/RULES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a755379762986cd504ef0bcfacacf30da101757b",
+      "size": 3583,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/a755379762986cd504ef0bcfacacf30da101757b"
+    },
+    {
+      "path": "serving/patch.diff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/ruwwww/open-kernel-challenge/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    }
+  ],
+  "truncated": false
+}

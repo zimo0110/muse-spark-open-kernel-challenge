@@ -1,0 +1,80 @@
+[
+  {
+    "sha": "896b816dc5fd418e1f167578eb35680b116b68f3",
+    "node_id": "C_kwDOVZJZ3doAKDg5NmI4MTZkYzVmZDQxOGUxZjE2NzU3OGViMzU2ODBiMTE2YjY4ZjM",
+    "commit": {
+      "author": {
+        "name": "infraax",
+        "email": "infraax@users.noreply.github.com",
+        "date": "2026-10-27T11:45:30Z"
+      },
+      "committer": {
+        "name": "infraax",
+        "email": "infraax@users.noreply.github.com",
+        "date": "2026-10-27T11:45:30Z"
+      },
+      "message": "Open Kernel Challenge 2026: archived campaign (results, hypotheses, method, kernels, tools, tests, judge data)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "b6296dc17e5a65aa530d1b987575973473fdbd48",
+        "url": "https://api.github.com/repos/infraax/okc-kernel-challenge/git/trees/b6296dc17e5a65aa530d1b987575973473fdbd48"
+      },
+      "url": "https://api.github.com/repos/infraax/okc-kernel-challenge/git/commits/896b816dc5fd418e1f167578eb35680b116b68f3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/infraax/okc-kernel-challenge/commits/896b816dc5fd418e1f167578eb35680b116b68f3",
+    "html_url": "https://github.com/infraax/okc-kernel-challenge/commit/896b816dc5fd418e1f167578eb35680b116b68f3",
+    "comments_url": "https://api.github.com/repos/infraax/okc-kernel-challenge/commits/896b816dc5fd418e1f167578eb35680b116b68f3/comments",
+    "author": {
+      "login": "infraax",
+      "id": 264011097,
+      "node_id": "U_kgDOD7x9WQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/264011097?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/infraax",
+      "html_url": "https://github.com/infraax",
+      "followers_url": "https://api.github.com/users/infraax/followers",
+      "following_url": "https://api.github.com/users/infraax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/infraax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/infraax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/infraax/subscriptions",
+      "organizations_url": "https://api.github.com/users/infraax/orgs",
+      "repos_url": "https://api.github.com/users/infraax/repos",
+      "events_url": "https://api.github.com/users/infraax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/infraax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "infraax",
+      "id": 264011097,
+      "node_id": "U_kgDOD7x9WQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/264011097?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/infraax",
+      "html_url": "https://github.com/infraax",
+      "followers_url": "https://api.github.com/users/infraax/followers",
+      "following_url": "https://api.github.com/users/infraax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/infraax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/infraax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/infraax/subscriptions",
+      "organizations_url": "https://api.github.com/users/infraax/orgs",
+      "repos_url": "https://api.github.com/users/infraax/repos",
+      "events_url": "https://api.github.com/users/infraax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/infraax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+
+    ]
+  }
+]

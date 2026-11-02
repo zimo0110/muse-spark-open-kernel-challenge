@@ -1,0 +1,29 @@
+# Local credentials and environment files, at every depth.
+.env
+.env.*
+**/.env
+**/.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local tooling and generated binaries.
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+*.so
+*.dylib
+*.o
+*.a
+*.cubin
+*.ptx
+*.sass
+
+# Raw execution logs; structured results and text profiles are retained.
+*.log
+core
+core.*

@@ -1,0 +1,71 @@
+okc run b9c621365e8f4585 on muse_moe_w4a16
+submission  /Users/zoir/dev/muse-challenge/muse_moe_w4a16/submission.py
+status      ok
+passed      true
+speedup     0.4473319676162745
+speedup_ci  [0.44062198810203035 0.45404194713051854]
+score_us    30063.802664638195
+tests       5/5 passed
+
+scored shapes (µs; speed of light is the reference's bound)
+case                                                         sglang      yours  speedup        sol  
+bs=1 load=decode 1 sharding=ep8                               79.97     120.24   0.665x      11.42  
+bs=16 load=decode 16 sharding=ep8                            189.14     454.73   0.416x      52.52  
+bs=32 load=decode 32 sharding=ep8                            211.54     639.99   0.331x      70.76  
+bs=8 load=verify 1 sharding=ep8                              151.65     339.96   0.446x      37.32  
+bs=128 load=verify 16 sharding=ep8                           460.56    1071.51   0.430x     101.34  
+bs=256 load=verify 32 sharding=ep8                           620.85    1358.30   0.457x     108.94  
+
+profile 0: bs=1 load=decode 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+void experts<1, 4, true, 1>(__nv_bfloat16 const*, unsigne...      60.6 µs  59.1%      1
+void experts<1, 4, false, 1>(__nv_bfloat16 const*, unsign...      34.1 µs  33.2%      1
+_finish                                                            5.8 µs   5.6%      1
+_routes                                                            1.1 µs   1.0%      1
+_schedule                                                          1.0 µs   1.0%      1
+total                                                            102.6 µs
+
+profile 1: bs=16 load=decode 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+void experts<1, 4, true, 1>(__nv_bfloat16 const*, unsigne...     251.0 µs  66.6%      1
+void experts<1, 4, false, 1>(__nv_bfloat16 const*, unsign...     116.5 µs  30.9%      1
+_finish                                                            6.9 µs   1.8%      1
+_routes                                                            1.1 µs   0.3%      1
+_schedule                                                          1.0 µs   0.3%      1
+total                                                            376.6 µs
+
+profile 2: bs=32 load=decode 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+void experts<1, 4, true, 1>(__nv_bfloat16 const*, unsigne...     426.0 µs  68.4%      1
+void experts<1, 4, false, 1>(__nv_bfloat16 const*, unsign...     188.3 µs  30.2%      1
+_finish                                                            6.7 µs   1.1%      1
+_routes                                                            1.2 µs   0.2%      1
+_schedule                                                          0.9 µs   0.1%      1
+total                                                            623.2 µs
+
+profile 3: bs=8 load=verify 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+void experts<1, 4, true, 1>(__nv_bfloat16 const*, unsigne...     202.4 µs  66.6%      1
+void experts<1, 4, false, 1>(__nv_bfloat16 const*, unsign...      93.8 µs  30.8%      1
+_finish                                                            5.9 µs   1.9%      1
+_routes                                                            1.1 µs   0.4%      1
+_schedule                                                          0.9 µs   0.3%      1
+total                                                            304.1 µs
+
+profile 4: bs=128 load=verify 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+void experts<4, 4, true, 1>(__nv_bfloat16 const*, unsigne...     664.8 µs  67.4%      1
+void experts<4, 4, false, 1>(__nv_bfloat16 const*, unsign...     312.4 µs  31.7%      1
+_finish                                                            7.1 µs   0.7%      1
+_routes                                                            1.4 µs   0.1%      1
+_schedule                                                          0.9 µs   0.1%      1
+total                                                            986.7 µs
+
+profile 5: bs=256 load=verify 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+void experts<4, 4, true, 1>(__nv_bfloat16 const*, unsigne...    1053.2 µs  66.4%      1
+void experts<4, 4, false, 1>(__nv_bfloat16 const*, unsign...     521.6 µs  32.9%      1
+_finish                                                            8.1 µs   0.5%      1
+_routes                                                            1.6 µs   0.1%      1
+_schedule                                                          1.0 µs   0.1%      1
+total                                                           1585.5 µs

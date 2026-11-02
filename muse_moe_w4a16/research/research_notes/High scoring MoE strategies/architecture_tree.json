@@ -1,0 +1,187 @@
+{
+  "sha": "6cae49a639ee6d14b929a5fd4a63c627f96d7dc0",
+  "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/trees/6cae49a639ee6d14b929a5fd4a63c627f96d7dc0",
+  "tree": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    {
+      "path": "NOTICE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d1069372b982b1f4fc7bcf263635ba56594a73c",
+      "size": 1547,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/8d1069372b982b1f4fc7bcf263635ba56594a73c"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2f6b29065b0f16c20bab470d0bcc49853383fba",
+      "size": 6781,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/c2f6b29065b0f16c20bab470d0bcc49853383fba"
+    },
+    {
+      "path": "RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f4b447663c135532a33859086c16b7f04d08921",
+      "size": 8844,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/5f4b447663c135532a33859086c16b7f04d08921"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "179a60105c67bc324f0e67d84aaae2563d6f6565",
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/trees/179a60105c67bc324f0e67d84aaae2563d6f6565"
+    },
+    {
+      "path": "docs/H200_MEASURED_FACTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3659ac29fa57158da7440e3a74cf5e939c1582f3",
+      "size": 32034,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/3659ac29fa57158da7440e3a74cf5e939c1582f3"
+    },
+    {
+      "path": "docs/NEGATIVE_RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41275c011ce424ce5145e6112f51a390451e2785",
+      "size": 30726,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/41275c011ce424ce5145e6112f51a390451e2785"
+    },
+    {
+      "path": "kernels",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8528abdc6d64cab1bb527eb14c25877abba39f9",
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/trees/b8528abdc6d64cab1bb527eb14c25877abba39f9"
+    },
+    {
+      "path": "kernels/muse_attention_decode.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d713a57b764b737cd2b8de6c7c34ed97c65d50f",
+      "size": 154807,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/2d713a57b764b737cd2b8de6c7c34ed97c65d50f"
+    },
+    {
+      "path": "kernels/muse_bf16_proj.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd40c597dd4840a542868fdcc04aa0df46dc6c68",
+      "size": 382614,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/bd40c597dd4840a542868fdcc04aa0df46dc6c68"
+    },
+    {
+      "path": "kernels/muse_decode_layer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02389585ece4c36bf983e2cd616a50c0f3a9364f",
+      "size": 839695,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/02389585ece4c36bf983e2cd616a50c0f3a9364f"
+    },
+    {
+      "path": "kernels/muse_moe_w4a16.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4143c3f596f7ab23a154e4b344d077f995f4d61b",
+      "size": 326062,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/4143c3f596f7ab23a154e4b344d077f995f4d61b"
+    },
+    {
+      "path": "kernels/muse_prefill_layer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d29c2c54a7e2dd1875690ef0a56b21c17e64593",
+      "size": 292650,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/2d29c2c54a7e2dd1875690ef0a56b21c17e64593"
+    },
+    {
+      "path": "licenses",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e2537dfb051344d76530a9b69b6b0d4ac67a5a01",
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/trees/e2537dfb051344d76530a9b69b6b0d4ac67a5a01"
+    },
+    {
+      "path": "licenses/LICENSE_NathenFernandes_muse-bf16-proj.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d77c3299a31acaac789ee1d8ad0327d7cda8e9c",
+      "size": 1073,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/7d77c3299a31acaac789ee1d8ad0327d7cda8e9c"
+    },
+    {
+      "path": "llms.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be8f65a6a745138f2ade8baec4f776ff791a34f4",
+      "size": 2961,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/be8f65a6a745138f2ade8baec4f776ff791a34f4"
+    },
+    {
+      "path": "results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbe2bdfe27d398391dff893fd2a3a57199bf4592",
+      "size": 19529,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/bbe2bdfe27d398391dff893fd2a3a57199bf4592"
+    },
+    {
+      "path": "timing_kit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "782a253d8dfbd67848c8925b8c1019d012025197",
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/trees/782a253d8dfbd67848c8925b8c1019d012025197"
+    },
+    {
+      "path": "timing_kit/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "673afaabb6638261b8dbe883807d66d3b564613c",
+      "size": 2334,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/673afaabb6638261b8dbe883807d66d3b564613c"
+    },
+    {
+      "path": "timing_kit/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "604395b8671a8bee596ec9f836704e2da26a14de",
+      "size": 47,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/604395b8671a8bee596ec9f836704e2da26a14de"
+    },
+    {
+      "path": "timing_kit/paired.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2720d7e3331e07dff3de649461f7ccae892db41a",
+      "size": 11430,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/2720d7e3331e07dff3de649461f7ccae892db41a"
+    },
+    {
+      "path": "timing_kit/pool_runs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19db4ffa8809fa0f08fc457da71fc4c73e713ca2",
+      "size": 5981,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/19db4ffa8809fa0f08fc457da71fc4c73e713ca2"
+    },
+    {
+      "path": "timing_kit/stalls.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f12c1804460ef5d38311e933a60b76a468c6ea8",
+      "size": 3030,
+      "url": "https://api.github.com/repos/alygg77/okc-muse-spark-kernels/git/blobs/7f12c1804460ef5d38311e933a60b76a468c6ea8"
+    }
+  ],
+  "truncated": false
+}

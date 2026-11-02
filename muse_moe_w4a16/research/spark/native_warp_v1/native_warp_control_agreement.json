@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "m": 1,
+      "regime": "normal",
+      "seed": 0,
+      "relative_error": 0.0005969575722701848
+    },
+    {
+      "m": 1,
+      "regime": "skewed",
+      "seed": 0,
+      "relative_error": 0.000925597210880369
+    },
+    {
+      "m": 1,
+      "regime": "all-local",
+      "seed": 0,
+      "relative_error": 0.0008428795845247805
+    },
+    {
+      "m": 4,
+      "regime": "normal",
+      "seed": 0,
+      "relative_error": 0.0006595458835363388
+    },
+    {
+      "m": 4,
+      "regime": "skewed",
+      "seed": 0,
+      "relative_error": 0.0007727949414402246
+    },
+    {
+      "m": 4,
+      "regime": "all-local",
+      "seed": 0,
+      "relative_error": 0.0008459886885248125
+    },
+    {
+      "m": 8,
+      "regime": "normal",
+      "seed": 0,
+      "relative_error": 0.000526378455106169
+    },
+    {
+      "m": 8,
+      "regime": "skewed",
+      "seed": 0,
+      "relative_error": 0.000785374955739826
+    },
+    {
+      "m": 8,
+      "regime": "all-local",
+      "seed": 0,
+      "relative_error": 0.0008058277890086174
+    },
+    {
+      "m": 16,
+      "regime": "normal",
+      "seed": 0,
+      "relative_error": 0.0006231566658243537
+    },
+    {
+      "m": 16,
+      "regime": "skewed",
+      "seed": 0,
+      "relative_error": 0.0008854161133058369
+    },
+    {
+      "m": 16,
+      "regime": "all-local",
+      "seed": 0,
+      "relative_error": 0.0007453861180692911
+    },
+    {
+      "m": 1,
+      "regime": "normal",
+      "seed": 1,
+      "relative_error": 0.000437803944805637
+    },
+    {
+      "m": 1,
+      "regime": "skewed",
+      "seed": 1,
+      "relative_error": 3.519782694638707e-05
+    },
+    {
+      "m": 1,
+      "regime": "all-local",
+      "seed": 1,
+      "relative_error": 0.0008901256951503456
+    },
+    {
+      "m": 4,
+      "regime": "normal",
+      "seed": 1,
+      "relative_error": 0.00033329566940665245
+    },
+    {
+      "m": 4,
+      "regime": "skewed",
+      "seed": 1,
+      "relative_error": 0.0009581466438248754
+    },
+    {
+      "m": 4,
+      "regime": "all-local",
+      "seed": 1,
+      "relative_error": 0.0007775890990160406
+    },
+    {
+      "m": 8,
+      "regime": "normal",
+      "seed": 1,
+      "relative_error": 0.000557440216653049
+    },
+    {
+      "m": 8,
+      "regime": "skewed",
+      "seed": 1,
+      "relative_error": 0.0007829293608665466
+    },
+    {
+      "m": 8,
+      "regime": "all-local",
+      "seed": 1,
+      "relative_error": 0.0007405496435239911
+    },
+    {
+      "m": 16,
+      "regime": "normal",
+      "seed": 1,
+      "relative_error": 0.0005151988007128239
+    },
+    {
+      "m": 16,
+      "regime": "skewed",
+      "seed": 1,
+      "relative_error": 0.0009568399400450289
+    },
+    {
+      "m": 16,
+      "regime": "all-local",
+      "seed": 1,
+      "relative_error": 0.0007665060111321509
+    }
+  ]
+}

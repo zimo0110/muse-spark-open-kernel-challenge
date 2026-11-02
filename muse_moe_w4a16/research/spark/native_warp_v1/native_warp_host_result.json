@@ -1,0 +1,41 @@
+{
+  "H200_execution": false,
+  "reports": [
+    {
+      "variant": [
+        8,
+        4
+      ],
+      "compiled": true,
+      "seconds": 19.056674420367926,
+      "exports": [
+        "warp_run",
+        "warp_resources"
+      ]
+    },
+    {
+      "variant": [
+        8,
+        6
+      ],
+      "compiled": true,
+      "seconds": 18.297078319825232,
+      "exports": [
+        "warp_run",
+        "warp_resources"
+      ]
+    },
+    {
+      "variant": [
+        16,
+        4
+      ],
+      "compiled": true,
+      "seconds": 18.22314308490604,
+      "exports": [
+        "warp_run",
+        "warp_resources"
+      ]
+    }
+  ]
+}

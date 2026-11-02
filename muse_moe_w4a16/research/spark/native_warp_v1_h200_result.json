@@ -1,0 +1,69 @@
+{
+  "checks": {
+    "flagged": [],
+    "ok": true,
+    "rejected": []
+  },
+  "error": null,
+  "evaluator": {
+    "code_sha256": "c8a380059e3d1f0afaa9914d6d48b09cdc83efc7e110e7301bca3413720092c0",
+    "files": {
+      "challenge/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+      "challenge/nvfp4.py": "cfdf37c7bc14b10f7353aba7d4632f4767401b92b4b073941a8030d9a961aaaf",
+      "configs/muse-spark-open.yaml": "60e242544d5f5a5fc143870461f7373b85accb677a536cb337581ded938c4a48",
+      "harness/eval.py": "0051a1bfac67a9f1fad06086b306653c6643b2bb253e15a794aa672312f070a9",
+      "harness/runner.py": "c905e5c80264c6d27620b6fc7d55b162dccdb8ed7282f8a513a4d2e6f2f226f2",
+      "harness/static_checks.py": "c5588b69e9e86229459a525c61b30096f6f13ff2add6cadf98f272c4ac8ca0c2",
+      "harness/worker.py": "950437610f57ddffbc1176b65d9c2ae909c47bf67b1e3fe0716a81946986f568",
+      "problems/muse_moe_w4a16/baseline.py": "4fc48bd9cdfd749863c93a2dbf4e556e0c38fb04acc4fa48a53ef34cbf6c92a1",
+      "problems/muse_moe_w4a16/reference.py": "a7e0b4fa86aa477a4e7bb5745b2b258954d72636b6da153bd239a717927cba44",
+      "problems/muse_moe_w4a16/task.yml": "cc6870087c1a115e69f40093478553e0a03c1b3e92f527c2e55c4115e2db42ad"
+    },
+    "image": "localhost:30500/kc/judge@sha256:8c102d00529abd8b80898116ac64a9c8f66bbd256d56142be4b96fb626e89452"
+  },
+  "flags": [],
+  "gpu": "H200",
+  "log_tail": "[native resources] (8, 4) [22, 22, 72, 9344]\n[native resources] (8, 6) [15, 15, 72, 13952]\n[native resources] (16, 4) [20, 20, 96, 9344]\n[native paired] {'seed': 47821, 'm': 1, 'variant': (8, 4), 'ratio': 0.6299882642264976}\n[native paired] {'seed': 47821, 'm': 1, 'variant': (8, 6), 'ratio': 0.6058985146448568}\n[native paired] {'seed': 47821, 'm': 2, 'variant': (8, 4), 'ratio': 0.6663629183296197}\n[native paired] {'seed': 47821, 'm': 2, 'variant': (8, 6), 'ratio': 0.6481961460939261}\n[native paired] {'seed': 47821, 'm': 4, 'variant': (8, 4), 'ratio': 0.6998714766232084}\n[native paired] {'seed': 47821, 'm': 4, 'variant': (8, 6), 'ratio': 0.6368540767282982}\nTraceback (most recent call last):\n  File \"/tmp/muse_moe_w4a16-xb9zy14p/run/worker.py\", line 423, in child_main\n    send(_setup_op(msg, module, state, sync, perf))\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/muse_moe_w4a16-xb9zy14p/run/worker.py\", line 322, in _setup_op\n    state[\"prep\"] = prepare(weights)\n                    ^^^^^^^^^^^^^^^^\n  File \"/tmp/muse_moe_w4a16-xb9zy14p/run/submission.py\", line 1112, in prepare\n    _native_calibrate(state,weights['w13'].device)\n  File \"/tmp/muse_moe_w4a16-xb9zy14p/run/submission.py\", line 1061, in _native_calibrate\n    raise AssertionError(('native control disagreement',m,variant,regime,_native_error(candidate_output,expected)))\nAssertionError: ('native control disagreement', 5, (8, 4), 'all_local', 0.008646974340081215)\n",
+  "machine": {
+    "gpu_after": {
+      "clocks.max.sm": 1980,
+      "clocks.mem": 3201,
+      "clocks.sm": 1980,
+      "driver_version": "595.91.07",
+      "name": "NVIDIA H200",
+      "power.draw": 131.36,
+      "power.limit": 700,
+      "temperature.gpu": 37
+    },
+    "gpu_before": {
+      "clocks.max.sm": 1980,
+      "clocks.mem": 3201,
+      "clocks.sm": 1980,
+      "driver_version": "595.91.07",
+      "name": "NVIDIA H200",
+      "power.draw": 132.98,
+      "power.limit": 700,
+      "temperature.gpu": 36
+    },
+    "node": "n-pe2w4ezypgo3uplzzi5nvj4iag"
+  },
+  "passed": false,
+  "records": [
+    {
+      "baseline_copies": 4,
+      "baseline_prepare_pad": 15514624,
+      "copies": null,
+      "error": "AssertionError: ('native control disagreement', 5, (8, 4), 'all_local', 0.008646974340081215)",
+      "event": "setup",
+      "first": "submission",
+      "prepare_pad": null,
+      "prepare_s": null,
+      "status": "fail"
+    }
+  ],
+  "returncode": 112,
+  "score_us": null,
+  "speedup": null,
+  "speedup_ci": null,
+  "status": "ok"
+}

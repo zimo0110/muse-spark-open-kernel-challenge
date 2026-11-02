@@ -1,0 +1,77 @@
+okc run d9d0ae9a12bc4e5f on muse_moe_w4a16
+submission  /Users/zoir/dev/muse-challenge/muse_moe_w4a16/submission.py
+status      ok
+passed      true
+speedup     0.31930370311693895
+speedup_ci  [0.31451414757018487 0.324093258663693]
+score_us    42118.2086794488
+tests       5/5 passed
+
+scored shapes (µs; speed of light is the reference's bound)
+case                                                         sglang      yours  speedup        sol  
+bs=1 load=decode 1 sharding=ep8                               77.76     154.81   0.502x      11.42  
+bs=16 load=decode 16 sharding=ep8                            195.65     691.84   0.283x      52.52  
+bs=32 load=decode 32 sharding=ep8                            207.17     902.11   0.230x      70.76  
+bs=8 load=verify 1 sharding=ep8                              143.38     473.12   0.303x      37.32  
+bs=128 load=verify 16 sharding=ep8                           474.16    1518.50   0.312x     101.34  
+bs=256 load=verify 32 sharding=ep8                           618.91    1802.66   0.343x     108.94  
+
+profile 0: bs=1 load=decode 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                            180.8 µs  95.8%      2
+_act                                                               2.2 µs   1.2%      1
+_reduce_norm                                                       1.9 µs   1.0%      1
+_finish2                                                           1.4 µs   0.8%      1
+_routes                                                            1.3 µs   0.7%      1
+_schedule                                                          0.9 µs   0.5%      1
+total                                                            188.6 µs
+
+profile 1: bs=16 load=decode 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                            622.9 µs  98.4%      2
+_act                                                               3.6 µs   0.6%      1
+_reduce_norm                                                       2.7 µs   0.4%      1
+_finish2                                                           1.7 µs   0.3%      1
+_routes                                                            1.1 µs   0.2%      1
+_schedule                                                          0.8 µs   0.1%      1
+total                                                            632.8 µs
+
+profile 2: bs=32 load=decode 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                            997.0 µs  98.7%      2
+_act                                                               4.8 µs   0.5%      1
+_reduce_norm                                                       3.7 µs   0.4%      1
+_finish2                                                           2.0 µs   0.2%      1
+_routes                                                            1.1 µs   0.1%      1
+_schedule                                                          1.0 µs   0.1%      1
+total                                                           1009.6 µs
+
+profile 3: bs=8 load=verify 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                            517.9 µs  98.2%      2
+_act                                                               3.2 µs   0.6%      1
+_reduce_norm                                                       2.5 µs   0.5%      1
+_finish2                                                           1.7 µs   0.3%      1
+_routes                                                            1.1 µs   0.2%      1
+_schedule                                                          0.9 µs   0.2%      1
+total                                                            527.3 µs
+
+profile 4: bs=128 load=verify 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                           1095.0 µs  97.5%      2
+_act                                                              11.2 µs   1.0%      1
+_reduce_norm                                                      11.0 µs   1.0%      1
+_finish2                                                           4.0 µs   0.4%      1
+_routes                                                            1.3 µs   0.1%      1
+_schedule                                                          0.9 µs   0.1%      1
+total                                                           1123.4 µs
+
+profile 5: bs=256 load=verify 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_gemm                                                           1674.0 µs  97.0%      2
+_act                                                              21.0 µs   1.2%      1
+_reduce_norm                                                      20.8 µs   1.2%      1
+_finish2                                                           6.7 µs   0.4%      1
+_routes                                                            1.5 µs   0.1%      1
+_schedule                                                          0.9 µs   0.1%      1
+total                                                           1724.9 µs

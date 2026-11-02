@@ -1,0 +1,63 @@
+okc run 8890dcd73d1f43d5 on muse_moe_w4a16
+submission  /Users/zoir/dev/muse-challenge/muse_moe_w4a16/upstream_async_wgmma.py
+status      ok
+passed      true
+speedup     1.7026416923533272
+speedup_ci  [1.6771020669680272 1.728181317738627]
+score_us    7898.608415615613
+tests       5/5 passed
+
+scored shapes (µs; speed of light is the reference's bound)
+case                                                         sglang      yours  speedup        sol  
+bs=1 load=decode 1 sharding=ep8                               76.86      35.12   2.189x      11.42  
+bs=16 load=decode 16 sharding=ep8                            188.34     111.26   1.693x      52.52  
+bs=32 load=decode 32 sharding=ep8                            213.04     145.91   1.460x      70.76  
+bs=8 load=verify 1 sharding=ep8                              150.78      89.31   1.688x      37.32  
+bs=128 load=verify 16 sharding=ep8                           461.78     278.56   1.658x     101.34  
+bs=256 load=verify 32 sharding=ep8                           615.79     382.64   1.609x     108.94  
+
+profile 0: bs=1 load=decode 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_w13_silu                                                         17.0 µs  52.5%      1
+_w2_ks                                                             9.3 µs  28.6%      1
+_wsum_ks                                                           4.6 µs  14.3%      1
+_d1_reduce                                                         1.5 µs   4.6%      1
+total                                                             32.4 µs
+
+profile 1: bs=16 load=decode 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_w2                                                              102.0 µs  94.0%      2
+_post_expert_norm_weighted_sum_kernel                              4.0 µs   3.7%      1
+_route                                                             2.6 µs   2.4%      1
+total                                                            108.5 µs
+
+profile 2: bs=32 load=decode 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_w2                                                              140.1 µs  95.5%      2
+_post_expert_norm_weighted_sum_kernel                              3.8 µs   2.6%      1
+_route                                                             2.8 µs   1.9%      1
+total                                                            146.7 µs
+
+profile 3: bs=8 load=verify 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_w13_silu                                                         48.4 µs  58.3%      1
+_w2                                                               29.1 µs  35.0%      1
+_post_expert_norm_weighted_sum_kernel                              3.2 µs   3.9%      1
+_route                                                             2.3 µs   2.8%      1
+total                                                             83.1 µs
+
+profile 4: bs=128 load=verify 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_w13_mix                                                         192.9 µs  63.4%      1
+_w2_mix                                                          100.1 µs  32.9%      1
+_route2                                                            6.4 µs   2.1%      1
+_post_expert_norm_weighted_sum_kernel                              4.8 µs   1.6%      1
+total                                                            304.1 µs
+
+profile 5: bs=256 load=verify 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_w13_mix                                                         279.6 µs  61.6%      1
+_w2_mix                                                          158.7 µs  34.9%      1
+_route2                                                           10.8 µs   2.4%      1
+_post_expert_norm_weighted_sum_kernel                              5.1 µs   1.1%      1
+total                                                            454.2 µs

@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "GPU": "NVIDIA GB10",
+  "reference_cases": [
+    {
+      "M": 1,
+      "regime": "normal",
+      "passed": true,
+      "message": "relative L2 error 4.506e-03 (worst row 4.506e-03)"
+    },
+    {
+      "M": 2,
+      "regime": "normal",
+      "passed": true,
+      "message": "relative L2 error 4.575e-03 (worst row 4.598e-03)"
+    },
+    {
+      "M": 4,
+      "regime": "normal",
+      "passed": true,
+      "message": "relative L2 error 4.669e-03 (worst row 4.788e-03)"
+    },
+    {
+      "M": 8,
+      "regime": "normal",
+      "passed": true,
+      "message": "relative L2 error 4.552e-03 (worst row 4.698e-03)"
+    },
+    {
+      "M": 9,
+      "regime": "normal",
+      "passed": true,
+      "message": "relative L2 error 4.569e-03 (worst row 4.725e-03)"
+    },
+    {
+      "M": 16,
+      "regime": "normal",
+      "passed": true,
+      "message": "relative L2 error 4.556e-03 (worst row 4.750e-03)"
+    },
+    {
+      "M": 1,
+      "regime": "skewed",
+      "passed": true,
+      "message": "relative L2 error 4.487e-03 (worst row 4.487e-03)"
+    },
+    {
+      "M": 2,
+      "regime": "skewed",
+      "passed": true,
+      "message": "relative L2 error 4.358e-03 (worst row 4.399e-03)"
+    },
+    {
+      "M": 4,
+      "regime": "skewed",
+      "passed": true,
+      "message": "relative L2 error 4.561e-03 (worst row 4.599e-03)"
+    },
+    {
+      "M": 8,
+      "regime": "skewed",
+      "passed": true,
+      "message": "relative L2 error 4.449e-03 (worst row 4.605e-03)"
+    },
+    {
+      "M": 9,
+      "regime": "skewed",
+      "passed": true,
+      "message": "relative L2 error 4.497e-03 (worst row 4.597e-03)"
+    },
+    {
+      "M": 16,
+      "regime": "skewed",
+      "passed": true,
+      "message": "relative L2 error 4.456e-03 (worst row 4.564e-03)"
+    },
+    {
+      "M": 1,
+      "regime": "all-local",
+      "passed": true,
+      "message": "relative L2 error 4.534e-03 (worst row 4.534e-03)"
+    },
+    {
+      "M": 2,
+      "regime": "all-local",
+      "passed": true,
+      "message": "relative L2 error 4.642e-03 (worst row 4.669e-03)"
+    },
+    {
+      "M": 4,
+      "regime": "all-local",
+      "passed": true,
+      "message": "relative L2 error 4.537e-03 (worst row 4.570e-03)"
+    },
+    {
+      "M": 8,
+      "regime": "all-local",
+      "passed": true,
+      "message": "relative L2 error 4.563e-03 (worst row 4.686e-03)"
+    },
+    {
+      "M": 9,
+      "regime": "all-local",
+      "passed": true,
+      "message": "relative L2 error 4.566e-03 (worst row 4.671e-03)"
+    },
+    {
+      "M": 16,
+      "regime": "all-local",
+      "passed": true,
+      "message": "relative L2 error 4.608e-03 (worst row 4.761e-03)"
+    },
+    {
+      "M": 1,
+      "regime": "empty",
+      "passed": true,
+      "message": "empty routes exact zero"
+    },
+    {
+      "M": 2,
+      "regime": "empty",
+      "passed": true,
+      "message": "empty routes exact zero"
+    },
+    {
+      "M": 4,
+      "regime": "empty",
+      "passed": true,
+      "message": "empty routes exact zero"
+    },
+    {
+      "M": 8,
+      "regime": "empty",
+      "passed": true,
+      "message": "empty routes exact zero"
+    },
+    {
+      "M": 9,
+      "regime": "empty",
+      "passed": true,
+      "message": "empty routes exact zero"
+    },
+    {
+      "M": 16,
+      "regime": "empty",
+      "passed": true,
+      "message": "empty routes exact zero"
+    }
+  ],
+  "graph_replays": 192,
+  "GB10_only_median_us": {
+    "1": 290.8160090446472,
+    "2": 753.6640167236328,
+    "4": 748.91197681427,
+    "8": 839.7279977798462,
+    "9": 1183.2319498062134,
+    "16": 1416.879951953888
+  },
+  "H200_score": null
+}

@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "m": 1,
+      "regime": "normal",
+      "passed": true,
+      "relative_error": 6.657430162704259e-07,
+      "message": "relative L2 error 6.657e-07 (worst row 6.657e-07)"
+    },
+    {
+      "m": 1,
+      "regime": "skewed",
+      "passed": true,
+      "relative_error": 2.2114167222753167e-05,
+      "message": "relative L2 error 2.211e-05 (worst row 2.211e-05)"
+    },
+    {
+      "m": 1,
+      "regime": "all-local",
+      "passed": true,
+      "relative_error": 4.1741397893702015e-08,
+      "message": "relative L2 error 4.174e-08 (worst row 4.174e-08)"
+    },
+    {
+      "m": 5,
+      "regime": "normal",
+      "passed": true,
+      "relative_error": 3.2411107895313762e-06,
+      "message": "relative L2 error 3.241e-06 (worst row 8.743e-06)"
+    },
+    {
+      "m": 5,
+      "regime": "skewed",
+      "passed": true,
+      "relative_error": 4.1162176785292104e-05,
+      "message": "relative L2 error 4.116e-05 (worst row 8.295e-05)"
+    },
+    {
+      "m": 5,
+      "regime": "all-local",
+      "passed": true,
+      "relative_error": 6.865987870696699e-06,
+      "message": "relative L2 error 6.866e-06 (worst row 1.215e-05)"
+    },
+    {
+      "m": 8,
+      "regime": "normal",
+      "passed": true,
+      "relative_error": 2.4186270820791833e-05,
+      "message": "relative L2 error 2.419e-05 (worst row 4.356e-05)"
+    },
+    {
+      "m": 8,
+      "regime": "skewed",
+      "passed": true,
+      "relative_error": 1.732061946313479e-06,
+      "message": "relative L2 error 1.732e-06 (worst row 3.648e-06)"
+    },
+    {
+      "m": 8,
+      "regime": "all-local",
+      "passed": true,
+      "relative_error": 1.9615263227024116e-05,
+      "message": "relative L2 error 1.962e-05 (worst row 3.763e-05)"
+    },
+    {
+      "m": 16,
+      "regime": "normal",
+      "passed": true,
+      "relative_error": 2.0959174435120076e-05,
+      "message": "relative L2 error 2.096e-05 (worst row 4.358e-05)"
+    },
+    {
+      "m": 16,
+      "regime": "skewed",
+      "passed": true,
+      "relative_error": 5.061777483206242e-05,
+      "message": "relative L2 error 5.062e-05 (worst row 1.665e-04)"
+    },
+    {
+      "m": 16,
+      "regime": "all-local",
+      "passed": true,
+      "relative_error": 5.3859730542171746e-05,
+      "message": "relative L2 error 5.386e-05 (worst row 1.715e-04)"
+    }
+  ]
+}

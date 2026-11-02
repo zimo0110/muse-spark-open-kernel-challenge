@@ -1,0 +1,65 @@
+okc run 19b3e683addc4186 on muse_moe_w4a16
+submission  /Users/zoir/dev/muse-challenge/muse_moe_w4a16/register_multi_k.py
+status      ok
+passed      true
+speedup     1.8100825153096407
+speedup_ci  [1.7829312775799961 1.837233753039285]
+score_us    7429.771784574937
+tests       5/5 passed
+
+scored shapes (µs; speed of light is the reference's bound)
+case                                                         sglang      yours  speedup        sol  
+bs=1 load=decode 1 sharding=ep8                               77.15      34.61   2.229x      11.42  
+bs=16 load=decode 16 sharding=ep8                            195.94     116.62   1.680x      52.52  
+bs=32 load=decode 32 sharding=ep8                            206.53     142.10   1.453x      70.76  
+bs=8 load=verify 1 sharding=ep8                              151.04      92.37   1.635x      37.32  
+bs=128 load=verify 16 sharding=ep8                           464.10     226.58   2.048x     101.34  
+bs=256 load=verify 32 sharding=ep8                           620.08     321.49   1.929x     108.94  
+
+profile 0: bs=1 load=decode 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_one_direct_first_partial                                         24.8 µs  52.1%      1
+_one_direct_w2_split                                              14.5 µs  30.4%      1
+_one_finish_direct                                                 6.7 µs  14.0%      1
+_one_direct_first_reduce                                           1.7 µs   3.6%      1
+total                                                             47.6 µs
+
+profile 1: bs=16 load=decode 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_b256_register_dispatch                                          110.3 µs  94.5%      2
+_b256_finish_register                                              4.0 µs   3.4%      1
+_b256_work_plan                                                    1.4 µs   1.2%      1
+_b256_compact_routes                                               1.1 µs   0.9%      1
+total                                                            116.7 µs
+
+profile 2: bs=32 load=decode 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_b256_register_dispatch                                          155.6 µs  96.0%      2
+_b256_finish_register                                              3.9 µs   2.4%      1
+_b256_work_plan                                                    1.3 µs   0.8%      1
+_b256_compact_routes                                               1.2 µs   0.8%      1
+total                                                            162.0 µs
+
+profile 3: bs=8 load=verify 1 sharding=ep8
+kernel                                                           GPU time  share  calls
+_b256_register_dispatch                                           96.4 µs  94.1%      2
+_b256_finish_register                                              3.6 µs   3.5%      1
+_b256_work_plan                                                    1.4 µs   1.3%      1
+_b256_compact_routes                                               1.1 µs   1.0%      1
+total                                                            102.4 µs
+
+profile 4: bs=128 load=verify 16 sharding=ep8
+kernel                                                           GPU time  share  calls
+_b256_register_dispatch                                          215.5 µs  96.6%      2
+_b256_finish_register                                              4.4 µs   2.0%      1
+_b256_work_plan                                                    1.7 µs   0.8%      1
+_b256_compact_routes                                               1.4 µs   0.6%      1
+total                                                            223.0 µs
+
+profile 5: bs=256 load=verify 32 sharding=ep8
+kernel                                                           GPU time  share  calls
+_b256_register_dispatch                                          346.7 µs  96.7%      2
+_b256_finish_register                                              8.0 µs   2.2%      1
+_b256_work_plan                                                    2.4 µs   0.7%      1
+_b256_compact_routes                                               1.6 µs   0.4%      1
+total                                                            358.6 µs

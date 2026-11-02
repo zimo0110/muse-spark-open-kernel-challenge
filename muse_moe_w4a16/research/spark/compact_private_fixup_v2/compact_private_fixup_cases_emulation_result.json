@@ -1,0 +1,279 @@
+{
+  "hardware": "GB10",
+  "method": "synchronous warp-MMA emulation; single-slot rings",
+  "H200_WGMMA_validation": false,
+  "H200_performance": null,
+  "variants": [
+    {
+      "name": "compact_private_fixup",
+      "passed": true,
+      "reference_cases": [
+        {
+          "M": 1,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.519e-03 (worst row 4.519e-03)"
+        },
+        {
+          "M": 1,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.698e-03 (worst row 4.698e-03)"
+        },
+        {
+          "M": 1,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.516e-03 (worst row 4.516e-03)"
+        },
+        {
+          "M": 1,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 4,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.535e-03 (worst row 4.602e-03)"
+        },
+        {
+          "M": 4,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.426e-03 (worst row 4.476e-03)"
+        },
+        {
+          "M": 4,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.562e-03 (worst row 4.651e-03)"
+        },
+        {
+          "M": 4,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 8,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.603e-03 (worst row 4.719e-03)"
+        },
+        {
+          "M": 8,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.489e-03 (worst row 4.648e-03)"
+        },
+        {
+          "M": 8,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.586e-03 (worst row 4.691e-03)"
+        },
+        {
+          "M": 8,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 16,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.527e-03 (worst row 4.627e-03)"
+        },
+        {
+          "M": 16,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.451e-03 (worst row 4.588e-03)"
+        },
+        {
+          "M": 16,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.559e-03 (worst row 4.778e-03)"
+        },
+        {
+          "M": 16,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 17,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.567e-03 (worst row 4.768e-03)"
+        },
+        {
+          "M": 17,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.460e-03 (worst row 4.714e-03)"
+        },
+        {
+          "M": 17,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.548e-03 (worst row 4.671e-03)"
+        },
+        {
+          "M": 17,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 32,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.575e-03 (worst row 4.866e-03)"
+        },
+        {
+          "M": 32,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.484e-03 (worst row 4.736e-03)"
+        },
+        {
+          "M": 32,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.564e-03 (worst row 4.750e-03)"
+        },
+        {
+          "M": 32,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 33,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.558e-03 (worst row 4.834e-03)"
+        },
+        {
+          "M": 33,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.494e-03 (worst row 4.740e-03)"
+        },
+        {
+          "M": 33,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.563e-03 (worst row 4.717e-03)"
+        },
+        {
+          "M": 33,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 128,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.561e-03 (worst row 4.788e-03)"
+        },
+        {
+          "M": 128,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.473e-03 (worst row 4.743e-03)"
+        },
+        {
+          "M": 128,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.583e-03 (worst row 4.784e-03)"
+        },
+        {
+          "M": 128,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 256,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.578e-03 (worst row 4.866e-03)"
+        },
+        {
+          "M": 256,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.465e-03 (worst row 4.726e-03)"
+        },
+        {
+          "M": 256,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.568e-03 (worst row 4.780e-03)"
+        },
+        {
+          "M": 256,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 257,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.581e-03 (worst row 5.023e-03)"
+        },
+        {
+          "M": 257,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.481e-03 (worst row 4.719e-03)"
+        },
+        {
+          "M": 257,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.568e-03 (worst row 4.778e-03)"
+        },
+        {
+          "M": 257,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        },
+        {
+          "M": 385,
+          "regime": "normal",
+          "passed": true,
+          "message": "relative L2 error 4.571e-03 (worst row 4.919e-03)"
+        },
+        {
+          "M": 385,
+          "regime": "skewed",
+          "passed": true,
+          "message": "relative L2 error 4.463e-03 (worst row 4.740e-03)"
+        },
+        {
+          "M": 385,
+          "regime": "all-local",
+          "passed": true,
+          "message": "relative L2 error 4.568e-03 (worst row 4.784e-03)"
+        },
+        {
+          "M": 385,
+          "regime": "empty",
+          "passed": true,
+          "message": "empty exact zero"
+        }
+      ],
+      "graph_replays": 352
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "partitions": 32768,
+  "release_orders": 65536,
+  "method": "All ordered K16 partitions, randomized contributor arrivals, last-arriver and designated-last protocols",
+  "GPU_correctness": null
+}

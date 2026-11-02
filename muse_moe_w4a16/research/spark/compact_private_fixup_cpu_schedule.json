@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "routing_job_schedules": 4800,
+  "split_units": 383415,
+  "grids": [
+    48,
+    132
+  ],
+  "job_counts": "1..88",
+  "token_counts_per_job": "1..64",
+  "checks": "nonempty CTA ranges; max16contributors; exclusive head/tail bank addresses; finisher addresses match every writer",
+  "H200_correctness": null
+}
