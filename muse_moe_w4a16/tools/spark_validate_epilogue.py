@@ -3,7 +3,7 @@
 Development-only FT_T=16 and synchronous warp-MMA emulation fit GB10 shared
 memory. These changes do not validate H200 asynchronous WGMMA or performance.
 """
-import json,importlib.util,re,secrets,time
+import json,importlib.util,re,secrets,time,sys
 from pathlib import Path
 import torch,reference
 from checks import compare
@@ -30,7 +30,9 @@ def load(case):
 
 def main():
  torch.set_num_threads(4);torch.set_float32_matmul_precision('highest');torch.backends.cuda.matmul.allow_tf32=False
- case=json.loads((R/'epilogue_warps_cases.json').read_text())[0]
+ case_file=Path(sys.argv[1]) if len(sys.argv)>1 else R.parent/'research/spark/epilogue_warps_cases.json'
+ if not case_file.exists():case_file=R/'epilogue_warps_cases.json'
+ case=json.loads(case_file.read_text())[0]
  core=load(case)
  weights=reference.generate_weights(secrets.randbits(62));state=core.prepare(weights)
  print('EP_RESOURCES', [ext.okc_resources() for ext in core._EXTS.values()],flush=True)

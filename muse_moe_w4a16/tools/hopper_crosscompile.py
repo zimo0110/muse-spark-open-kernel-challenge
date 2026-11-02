@@ -26,7 +26,7 @@ def compile_case(case):
     start=time.monotonic()
     run=subprocess.run(command,capture_output=True,text=True,timeout=240)
     (folder/'compiler.log').write_text(run.stdout+run.stderr)
-    report={'name':case['name'],'compiled':run.returncode==0,'seconds':round(time.monotonic()-start,3),'device_source_sha256':hashlib.sha256(source.encode()).hexdigest(),'defines':flags,'resource_lines':[line for line in run.stderr.splitlines() if any(s in line for s in ('registers','stack frame','spill','warning','error'))]}
+    report={'name':case['name'],'compiled':run.returncode==0,'seconds':round(time.monotonic()-start,3),'device_source_sha256':hashlib.sha256(source.encode()).hexdigest(),'defines':flags,'resource_lines':[line for line in run.stderr.splitlines() if any(s in line for s in ('registers','stack frame','spill','warning','error','(C75'))]}
     if run.returncode==0:
         sass=subprocess.run(['cuobjdump','--dump-sass',str(binary)],capture_output=True,text=True,check=True).stdout
         (folder/'kernel.sass').write_text(sass)

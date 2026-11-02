@@ -1,4 +1,7 @@
-"""Build a private paired experiment; retain the selected control by default."""
+"""Build a private paired experiment; retain the selected control by default.
+
+H200 result6392db25a39e452e: trial correct but slower, control retained.
+"""
 from pathlib import Path
 import ast,json
 R=Path(__file__).resolve().parents[1]

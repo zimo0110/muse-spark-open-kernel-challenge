@@ -17,8 +17,9 @@ GB10 cannot execute Hopper WGMMA directly. Development runners substitute synchr
 |---|---|
 | `phase_probe_h200_result.json`, `phase_probe_h200_summary.json` | H200 phase measurements and probe-overhead comparisons |
 | `phase_probe_v1/` | Frozen profiler sources, builders, and development validation |
-| `epilogue_warps_compile_result.json`, `epilogue_warps_emulation_result.json` | Epilogue service-warps compiler and reduced-tile protocol/math checks; H200 evaluation pending |
+| `epilogue_warps_compile_result.json`, `epilogue_warps_emulation_result.json` | Epilogue service-warps compiler and reduced-tile protocol/math checks; H200 trial rejected on paired timing; see `epilogue_warps_h200_result.json` |
 | `fixed32_h200_result.json` | Negative fixed-N32 timing result, correctness and replay evidence |
+| `register_donation_compile_result.json`, `register_donation_narrow_compile_result.json`, `register_donation_emulation_result.json` | Register-budget/grouping probes and math checks; target H200 check pending |
 | `fixed_width_v1/` | Fixed-width consumer prototypes and validation |
 | `fixed_width_binary_sizes.json` | ELF executable-section sizes, excluding debug-section inflation |
 | `fixed_width_compile_result.json`, `fixed_width_register_compile_result.json` | Hopper register and spill diagnostics |

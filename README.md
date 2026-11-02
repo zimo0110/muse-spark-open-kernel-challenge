@@ -89,11 +89,11 @@ The implementation initializes shared activation padding on every call, discards
 
 A wider N64 variant passed functional Spark checks but produced Hopper register spills. Three register-lifetime/grouping alternatives still spilled, so those builds are parked before spending H200 checks. N32 passed H200 correctness and 6,000 queued replays, but lost all nine paired comparisons: geometric-mean control/trial ratio **0.981844** (about 1.85% higher trial latency). The control was retained; the reported 2.356605× score therefore belongs to the fallback. Its validation and frozen sources are in [fixed_width_v1](muse_moe_w4a16/research/spark/fixed_width_v1/). Spark integration timing is not used to predict H200 performance.
 
-### Pipeline prototype: separate epilogue warps
+### Pipeline experiment: separate epilogue warps
 
-The next prototype keeps four WGMMA compute groups and assigns completed FP32 tiles to two dedicated epilogue warps through shared-memory mailboxes. The aim is to overlap epilogue stores and split-unit reductions with the next compute segment. Reducing the weight and activation rings from three slots to two makes room for a 64 KiB payload buffer. This changes scheduling and ownership, while retaining the original arithmetic and BF16 boundaries.
+This prototype keeps four WGMMA compute groups and assigns completed FP32 tiles to two dedicated epilogue warps through shared-memory mailboxes. The aim is to overlap epilogue stores and split-unit reductions with the next compute segment. Reducing the weight and activation rings from three slots to two makes room for a 64 KiB payload buffer. This changes scheduling and ownership, while retaining the original arithmetic and BF16 boundaries.
 
-This is an experiment, not a verified improvement. Hopper compiler diagnostics and a reduced-tile Spark emulation test precede H200 correctness and paired timing. [EXPERIMENTS.md](muse_moe_w4a16/EXPERIMENTS.md) records the evidence and limitations.
+H200 job `6392db25a39e452e` passed trial correctness comparisons and 6,000 queued replays, but all nine paired timings lost: about **17.2% higher latency** overall. The control was retained. This design is rejected; additional scheduling overlap did not pay for its combined costs. [EXPERIMENTS.md](muse_moe_w4a16/EXPERIMENTS.md) records the evidence and limitations. The next compiler-validated prototype redistributes producer registers to compute warpgroups and uses larger MMA commit groups only where the register budget permits; runtime validation remains necessary.
 
 ## Repository map
 

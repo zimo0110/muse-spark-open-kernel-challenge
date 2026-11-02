@@ -1,0 +1,6 @@
+{
+  "base_shared_bytes": 22400,
+  "dynamic_shared_bytes": 227200,
+  "threads": 640,
+  "register_budget": 96
+}
