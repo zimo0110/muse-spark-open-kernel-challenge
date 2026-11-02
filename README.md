@@ -60,7 +60,7 @@ Each result below distinguishes the experimental path from any fallback selected
 | Independent one-warp tiles | Slower on H200 and failed repeated-call consistency despite passing Spark tests | Parked |
 | Separate FP32 partial-result banks | Paired ratio **0.99859** | Performance neutral |
 | Compact partial banks plus explicit proxy fence | Paired ratio **0.99876**; 10,000 queued replays with zero drift at all 500 checked outputs | Retained as research; no promotion |
-| Fixed-width WGMMA consumer | Prototype targeting smaller code footprint, trading extra padded math for fewer dispatch variants | H200 performance unverified |
+| Fixed-width WGMMA consumer | N32 passes 50 reference cases, 400 mixed replays, and 6,000 integration replays on Spark; Hopper build has no spills | Paired H200 check prepared; performance unverified |
 
 The published path also passed an additional **24,000 queued graph replays**, with maximum observed relative-L2 drift of approximately **6.58e-5**. It is not claimed to be globally bitwise deterministic.
 
@@ -78,6 +78,16 @@ Full history and caveats live in [WORK_LOG.md](muse_moe_w4a16/WORK_LOG.md). [ove
 These observations direct the next investigation toward consumer execution and work handoffs. They do **not** identify a particular instruction stall or establish that memory bandwidth is the sole bottleneck. Phase windows overlap across CTAs; their reported durations are not additive whole-kernel costs. Logical bytes issued are not hardware DRAM traffic measurements. Empty-ring waits sample one in 16 positions.
 
 Read the [structured H200 summary](muse_moe_w4a16/research/spark/phase_probe_h200_summary.json) and [full result](muse_moe_w4a16/research/spark/phase_probe_h200_result.json). The profiler passed 76 independent-reference cases and 608 graph replays on Spark before its H200 run, plus a complete Python-runner integration test.
+
+### Current experiment: fixed-width consumer
+
+[cuda_persistent_fixed32_paired.py](muse_moe_w4a16/cuda_persistent_fixed32_paired.py) is prepared for a private H200 check. It uses one 32-token-column WGMMA width for batches 25–32, trading work on unused columns for a smaller executable and fewer dispatch variants. Its control is the existing kernel, and the experimental path is selected only after a sufficient paired gain, per-seed checks, and a positive result specifically at the scored batch of 32. Larger scored batches keep the existing implementation. The previously checked MID extension serves nearby batches through 24.
+
+The offline Hopper build uses **96 registers with zero spills**. Executable text for each kernel entry falls from **373,120 to 107,520 bytes**, approximately **71% smaller**. Static WGMMA instruction sites across the two kernel instantiations fall from 1,024 to 128. These are code-size observations, not a measured speedup or a reduction in executed tensor operations.
+
+The implementation initializes shared activation padding on every call, discards invalid token columns, and guards split-result writes so unused columns cannot contaminate a later call. The narrow prototype also handles duplicate expert IDs by splitting its routing jobs at 32 tokens while retaining the control's scratch-buffer ABI.
+
+A wider N64 variant passed functional Spark checks but produced Hopper register spills. Three register-lifetime/grouping alternatives still spilled, so those builds are parked before spending H200 checks. The next eligible candidate is N32. Its validation and frozen sources are in [fixed_width_v1](muse_moe_w4a16/research/spark/fixed_width_v1/). Spark integration timing is not used to predict H200 performance.
 
 ## Repository map
 

@@ -793,3 +793,35 @@ and guard splitpartialwrites/epilogues by actualvalidNTT topreventworkspace
 contamination acrosscalls. Keep all BF16boundaries andlosslessweightlayout.
 NoH200budget remains; prepare/compile/Sparkvalidate whilewaitingfree4pmreset.
 DoNOTscoreagain without additional explicitapproval;9/9authorizationused.
+
+Fixed-width consumer prototype prepared afterH200phase profiling. OneN32 orN64
+WGMMA width replaces8dispatchpaths. Validtokenoutputs retained, sharedB ring
+zeroed oncepercall withproxyfence beforehelpersstart; inactivepartialtilewrites
+areguarded topreventcrosscall workspacecontamination. N32routechunks capped32
+insideunchanged64tokenscratchABI, so duplicateidsalsofitN32. Newpairedcandidate
+cuda_persistent_fixed32_paired.py triesonlyM25/28/32 across3seeds,5routingregimes,
+24alternatingcoldpairs,6000queuedcoldreplays,>3%overallpairedgain/perseedguards
+andM32>2%medianrequirement; otherwiseoriginalfallback. MIDthrough24 carries the
+previouslycheckednearbyshapeextension. Actual6scoredshapes changeonlyM32ifchosen.
+
+OfflineHopperN32 PASS96regs,0spills; executablekerneltext107520B versus373120B
+control (~71%smaller), staticHGMMA sites128vs1024 acrossbothkerneltemplates.
+Staticcode reduction is NOT runtimeinstruction or speedup evidence. N64 base
+64/104Bspills; volatilecounts didnotfix; GS1/volatileGS1still48/72Bspills. Reject
+thoseN64builds beforeH200. FunctionalSpark: N32PASS50independentFP32reference
+cases+400mixedgraphreplays; N64PASS75+600, includingduplicateids,M385chunking.
+ActualN32PythoncalibrationintegrationPASS6000queuedreplays onGB10,zero observed
+checkpointdrift. GB10pairedtimes/selection are NOT H200predictors. Frozen
+sources/builders/reports research/spark/fixed_width_v1/. No newH200job submitted;
+9/9scoredpermissionsspent,private10/10used,0pending;nextfreecheckafterNov2 16PST.
+
+Repository work explicitlyrequested byuser: connectedworkspace toexisting
+origin git@github.com:zimo0110/muse-spark-open-kernel-challenge.git/main, preserved
+initialApachelicense/history. Firstcheckpoint0724a49 pushed withfullREADME,
+verifiedsources/results, BF16snapshotunchanged. LocalGit author/committer
+ZoirImomaliev <91550816+zimo0110@users.noreply.github.com>; noCo-authored-bytrailer.
+All.env/.env.* recursivelyignored;527indexedfiles passedknownlocalcredential+
+token/privatekeyscan. Repo-localprecommithookinstalled. Alternate-index tests
+proveforced.env.local anddummyprivatekeyfixturesblockedwithoutchangingrealindex.
+Userauthorizesperiodiccommits/pushes;updateREADMEatmeaningfulcheckpoints, keep
+secretsuntracked, preserveallrequiredthirdpartylicense/attributionnotices.

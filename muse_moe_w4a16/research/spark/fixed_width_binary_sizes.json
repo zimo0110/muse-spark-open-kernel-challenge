@@ -1,0 +1,26 @@
+{
+  "phase_main_control": {
+    "cubin_bytes": 3832848,
+    "executable_text_bytes": 746240,
+    "fused_kernel_text_bytes": {
+      ".text._ZN3okc9moe_fusedILb1EEEvNS_6ParamsE": 373120,
+      ".text._ZN3okc9moe_fusedILb0EEEvNS_6ParamsE": 373120
+    }
+  },
+  "fixed_n32": {
+    "cubin_bytes": 877784,
+    "executable_text_bytes": 215040,
+    "fused_kernel_text_bytes": {
+      ".text._ZN3okc9moe_fusedILb1EEEvNS_6ParamsE": 107520,
+      ".text._ZN3okc9moe_fusedILb0EEEvNS_6ParamsE": 107520
+    }
+  },
+  "fixed_n64": {
+    "cubin_bytes": 985944,
+    "executable_text_bytes": 241152,
+    "fused_kernel_text_bytes": {
+      ".text._ZN3okc9moe_fusedILb1EEEvNS_6ParamsE": 120576,
+      ".text._ZN3okc9moe_fusedILb0EEEvNS_6ParamsE": 120576
+    }
+  }
+}

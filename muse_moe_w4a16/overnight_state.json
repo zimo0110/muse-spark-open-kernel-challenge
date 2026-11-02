@@ -119,7 +119,7 @@
   },
   "final_ranked_count": 1225,
   "resumed_by_user": true,
-  "continuation_status": "Ninthauthorizeddiagnosticcomplete;H200data points nextinvestigation towardconsumer/G1work; prototypecode-footprint experiment next;0checks/0scoredpermissionremaining",
+  "continuation_status": "H200diagnosticcomplete;fixedN32candidatepreparedandSparkvalidated;awaitprivatequotareset4pmPST. Repositorycheckpointpushed;nextcheckpointcontainsprototypeproof.9/9scoredpermissionsspent,10/10privatechecksused,0pending.",
   "rank_one_achieved": false,
   "experimental_candidate": "register_ready.py",
   "experimental_status": "H200 confirmed 1.84686x; 2.6x not achieved",
@@ -1109,5 +1109,29 @@
     "source_sha256": "369c653aed5ccaa04e89ab5c5844af6c834deb30b70ba9d1c79c72139485ae71",
     "authorization": "User explicitly answered Yes\u2014one scored diagnostic run; one additional scored run only, cap9total.",
     "consumed_by_job": "b6387d8f931647f0"
+  },
+  "prepared_fixed32": {
+    "file": "cuda_persistent_fixed32_paired.py",
+    "sha256": "6bf9546a89b64ae9f83382ebdab8769f0f0967fbbb3fec5b975b7074c8da132d",
+    "status": "READY forprivateH200check afterquotareset; NOT H200 dispatched",
+    "Spark_independent_reference_cases": 50,
+    "Spark_operator_graph_replays": 400,
+    "Spark_integration_queued_replays": 6000,
+    "Hopper_offline_registers": 96,
+    "Hopper_offline_spills": 0,
+    "kernel_executable_bytes": 107520,
+    "control_kernel_executable_bytes": 373120,
+    "H200_performance": null,
+    "selection": "Useonlyifpairedgatespass;otherwiseoriginalcontrol; newpathM25..32; verifiedMIDextensionthrough24",
+    "rejected_N64": "Base64/104Bspills,volatilealso64/104,GS1andvolatileGS1still48/72; do notuseH200budget onthese"
+  },
+  "repository": {
+    "url": "git@github.com:zimo0110/muse-spark-open-kernel-challenge.git",
+    "branch": "main",
+    "last_pushed_checkpoint": "0724a49",
+    "author": "Zoir Imomaliev",
+    "author_email": "91550816+zimo0110@users.noreply.github.com",
+    "commit_policy": "Commitandpushatmeaningfulexperimentcheckpoints;keepREADMEcurrent;nocoauthoredtrailer",
+    "secrets": "Recursive.envignore,known-credentialstagedscan,repo-localprecommithook;forcedenv/privatekeyfixturetestpassed;neverstage.env.local"
   }
 }

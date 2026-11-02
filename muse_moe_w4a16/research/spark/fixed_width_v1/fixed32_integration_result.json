@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "hardware": "GB10",
+  "H200_performance": null,
+  "Hopper_async_validation": false,
+  "actual_calibration_runner": true,
+  "queued_replays": 6000,
+  "seconds": 24.229,
+  "soak_checkpoints": [
+    {
+      "M": 25,
+      "queued_replays": 2000,
+      "observed_checkpoints": 100,
+      "max_observed_relative_L2": 0.0,
+      "bitwise_differing_checkpoints": 0
+    },
+    {
+      "M": 28,
+      "queued_replays": 2000,
+      "observed_checkpoints": 100,
+      "max_observed_relative_L2": 0.0,
+      "bitwise_differing_checkpoints": 0
+    },
+    {
+      "M": 32,
+      "queued_replays": 2000,
+      "observed_checkpoints": 100,
+      "max_observed_relative_L2": 0.0,
+      "bitwise_differing_checkpoints": 0
+    }
+  ]
+}
