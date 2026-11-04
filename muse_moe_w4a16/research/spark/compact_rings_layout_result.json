@@ -1,0 +1,23 @@
+{
+  "method": "Host C++ record layout (8-byte pointers, standard scalar alignment); target CUDA resources still require runtime check",
+  "cases": [
+    {
+      "name": "compact_rings_3_3",
+      "base": 18944,
+      "dynamic_shared_bytes": 227840,
+      "within_H200_capacity": true
+    },
+    {
+      "name": "compact_rings_4_2",
+      "base": 18944,
+      "dynamic_shared_bytes": 231936,
+      "within_H200_capacity": true
+    },
+    {
+      "name": "compact_rings_2_4",
+      "base": 18944,
+      "dynamic_shared_bytes": 223744,
+      "within_H200_capacity": true
+    }
+  ]
+}
